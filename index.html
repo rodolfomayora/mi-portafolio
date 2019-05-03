@@ -20,13 +20,81 @@
 	</header>
 
 	<!-- NAVIGATION BAR -->
-	<nav class="navigation">
-		
+	<nav id="navigation" class="navigation">
+		<a class="navigation__item" href="#">Inicio</a>
+		<a class="navigation__item" href="#">Portafolio</a>
+		<a class="navigation__item" href="#">Sobre mi</a>
+		<a class="navigation__item" href="#">Contacto</a>
 	</nav>
 
 	<!-- CONTENT -->
 	<main class="main">
-		
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</main>
 	
 	<!-- FOOTER -->
@@ -35,6 +103,25 @@
 	</footer>
 
 	<!-- SCRIPTS -->
-	<script src="#"></script>
+	<script type="text/javascript">
+		const navigation = document.getElementById( 'navigation' );
+
+		document.addEventListener( 'scroll', function () {
+			if ( window.pageYOffset === 0 ) {
+					console.log( 'no sticky' );
+				navigation.classList.remove( 'navigation--moved' )
+					navigation.classList.add( 'navigation' );
+			} 
+
+			if ( window.pageYOffset > 0 ) {
+				if ( ! navigation.classList.contains( 'navigation--moved' ) )
+				{
+					console.log( 'sticky' );
+					navigation.classList.add( 'navigation--moved' );
+					navigation.classList.remove( 'navigation' );
+				}
+			}
+		} );
+	</script>
 </body>
 </html>

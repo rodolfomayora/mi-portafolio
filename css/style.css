@@ -63,9 +63,54 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	background-color: rgba( 44, 62, 80, .7 );
 }
 
+/* temporal */
+.header__title,
+.header__text {
+	font-size: 1rem;
+}
 
 /*	Navigation Bar
 ===========================================================*/
+.navigation,
+.navigation--moved {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	padding-right: 40px;
+	transition: background-color .5s, line-height .5s;
+}
+
+.navigation {
+	line-height: 60px;
+	background-color: transparent;
+}
+
+.navigation--moved {
+	background-color: rgba( 44, 62, 80, 1 );
+	line-height: 100px;
+	box-shadow: 0 2px 10px #222;
+}
+
+.navigation__item {
+	display: inline-block;
+	width: 120px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color .7s, background-color .7s;
+}
+
+.navigation .navigation__item:hover {
+	color: #f1c40f;
+}
+
+.navigation--moved .navigation__item:hover {
+	color: rgba( 44, 62, 80, 1 );
+	background-color: #ecf0f1;
+}
 
 
 /*	Main Content
