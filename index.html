@@ -11,13 +11,6 @@
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-	<!-- header -->
-	<header class="header">
-		<div class="header__color">
-			<h1 class="header__title"> RODOLFO MAYORA </h1>
-			<h2 class="header__text">Desarrollador Web jr</h2>
-		</div>
-	</header>
 
 	<!-- BURGER NAVIGATION -->
 	<img id="burger" class="burger" src="img/menu.png" alt="menu"></img>
@@ -27,6 +20,18 @@
 		<a class="navigation__item" href="#">Sobre mi</a>
 		<a class="navigation__item" href="#">Contacto</a>
 	</nav>
+
+
+<div class="content">
+	
+	<!-- header -->
+	<header class="header">
+		<div class="header__color">
+			<h1 class="header__title"> RODOLFO MAYORA </h1>
+			<h2 class="header__text">Desarrollador Web jr</h2>
+		</div>
+	</header>
+
 
 	<!-- NAVIGATION BAR 
 	<nav id="navigation" class="navigation">
@@ -42,6 +47,7 @@
 	
 	</main>
 	
+</div>
 	<!-- FOOTER -->
 	<footer class="footer">
 		
@@ -74,8 +80,7 @@
 		const burger = document.getElementById( 'burger' );
 		const navigation = document.getElementById( 'navigation' );
 		const items = document.getElementsByClassName( 'navigation__item' );
-		const header = document.querySelector( '.header' );
-		const main = document.querySelector( '.main' );
+		const content = document.querySelector( '.content' );
 		let burgerButton = true;
 
 
@@ -92,8 +97,7 @@
 			burger.classList.toggle( 'burger--active' );
 
 			navigation.classList.toggle( 'navigation--visible' );
-			header.classList.toggle( 'blur' );
-			main.classList.toggle( 'blur' );
+			content.classList.toggle( 'blur' );
 		} )
 
 		items[ 0 ].addEventListener( 'click',  function () {
