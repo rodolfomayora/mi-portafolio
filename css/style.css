@@ -16,6 +16,9 @@
 	padding: 0;
 	margin: 0;
 	outline: 0;
+	/** quita el color azul que aparece al hacer click */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -71,6 +74,75 @@ footer { display: block; } /* evita problemas de compatibilidad */
 
 /*	Navigation Bar
 ===========================================================*/
+.burger {
+	position: fixed;
+	z-index: 15;
+	top: 15px;
+	right: 15px;
+	padding: 20px;
+	background-color: rgba( 51, 51, 51, .8 );
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px 4px #111;
+	transition: background-color 1s, box-shadow 1s;
+}
+
+.burger--active {
+	background-color: transparent;
+	box-shadow: 0px 0px 0px 0px #111;
+}
+
+.header,
+.main {
+	transition: filter 1s;
+}
+
+.blur { filter: blur( 5px ); }
+
+.navigation {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 2px 5px 2px #111;
+	background-color: transparent;
+	visibility: hidden;
+	opacity: 0;
+	transform: scale( .5 );
+	transition: visibility 1s, opacity 1s, transform 1s;
+}
+
+.navigation--visible {
+	transform: scale( 1 );
+	visibility: visible;
+	opacity: 1;
+}
+
+.navigation__item {
+	padding: 12%;
+	width: 60%;
+	font-size: 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	transition: transform .6s;
+}
+
+.navigation__item:nth-child( -n + 3 ) {
+	border-bottom: 1.3px solid #eee;
+}
+
+.touched {
+	color: #f1c40f;
+}
+
+
+/*	Navigation Bar
+===========================================================
 .navigation,
 .navigation--moved {
 	position: fixed;
@@ -112,9 +184,15 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	background-color: #ecf0f1;
 }
 
+*/
 
 /*	Main Content
 ===========================================================*/
+.main {
+	height: 700px;
+	color: #fff;
+	background-color: rgba( 44, 62, 80, 1 );
+}
 
 
 /*	Footer
