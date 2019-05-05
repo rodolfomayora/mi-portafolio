@@ -15,7 +15,7 @@
 	<!-- BURGER NAVIGATION -->
 	<img id="burger" class="burger" src="img/menu.png" alt="menu"></img>
 	<nav id="navigation" class="navigation">
-		<a class="navigation__item" href="#">Inicio</a>
+		<a class="navigation__item navigation__item--open" href="#">Inicio</a>
 		<a class="navigation__item" href="#">Proyectos</a>
 		<a class="navigation__item" href="#">Sobre mi</a>
 		<a class="navigation__item" href="#">Contacto</a>
@@ -74,7 +74,23 @@
 	
 		<!-- FOOTER -->
 		<footer class="footer">
-			<small class="footer__copy-right"> &copy; 2019 Derechos reservados </small>
+			<nav class="footer__nav">
+				<a class="footer__nav-item footer__nav-item--open" href="#"> INICIO </a>
+				<a class="footer__nav-item" href="#"> PROYECTOS </a>
+				<a class="footer__nav-item" href="#"> SOBRE MI</a>
+				<a class="footer__nav-item" href="#"> CONTACTO </a>
+			</nav>
+			
+			<div class="footer__social-media">
+				<a class="social-media__link" href="#">
+					<img class="social-media__img" src="img/github-1.png" alt="github">
+				</a>
+				<a class="social-media__link" href="#">
+					<img class="social-media__img" src="img/linkedin-1.png" alt="linked">
+				</a>
+			</div>
+			
+			<small class="footer__copy-right"> &copy; 2019 - Todos los derechos reservados </small>
 		</footer>
 		
 	</div>

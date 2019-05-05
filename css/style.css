@@ -156,12 +156,18 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	text-align: center;
 	text-decoration: none;
 	text-shadow: 2px 3px 2px #111;
+	font-weight: bold;
+	letter-spacing: 5px;
 	color: #fff;
 	transition: transform .6s;
 }
 
 .navigation__item:nth-child( -n + 3 ) {
 	border-bottom: 1.3px solid #eee;
+}
+
+.navigation__item--open {
+	color: #f1c40f;
 }
 
 .touched {
@@ -257,15 +263,52 @@ footer { display: block; } /* evita problemas de compatibilidad */
 /*	Footer
 ===========================================================*/
 .footer {
-	height: 200px;
+	height: auto;
+	padding: 10%;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 	color: #fff;
 	background-color: #2d3436;
 }
 
-/*	Media Queries
+.footer__nav,
+.footer__social-media {
+	text-align: center;
+	margin-bottom: 8%;
+}
+
+.social-media__img {
+	width: 80px;
+	height: 80px;
+	padding: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: transparent;
+	border-radius: 25%;
+	box-shadow: 0px 0px 10px 2px #111;
+}
+
+.footer__nav {
+	width: 70%;
+}
+
+.footer__nav-item {
+	display: block;
+	padding: 8%;
+	margin: 4%;
+	font-size: 1.4rem;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footer__nav-item--open {
+	color: #f1c40f;
+	border-bottom: solid 2px #f1c40f;
+}
+
+/*	Media Queries rgb(25, 25, 37)
 ===========================================================*/
 
 
