@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Rodolfo Mayora | INICIO</title>
+	<title>Rodolfo Mayora | PROYECTOS</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
 	<meta name="description" content="Rodolfo Mayora - Desarrollar Web jr"/>
@@ -12,48 +12,29 @@
 </head>
 <body>
 
-	<!-- BURGER NAVIGATION -->
+	<!-- NAVIGATION BAR -->
 	<img id="burger" class="burger" src="img/menu.png" alt="menu"></img>
 	<nav id="navigation" class="navigation">
-		<a class="navigation__item navigation__item--open" href="index.html">INICIO</a>
-		<a class="navigation__item" href="proyectos.html">PROYECTOS</a>
+		<a class="navigation__item" href="index.html">INICIO</a>
+		<a class="navigation__item navigation__item--open" href="proyectos.html">PROYECTOS</a>
 		<a class="navigation__item" href="#">SOBRE MI</a>
 		<a class="navigation__item" href="#">CONTACTO</a>
 	</nav>
 
-
 	<div class="content">
-		
-		<!-- header -->
-		<header class="header">
-			<div class="header__circle"></div>
 
-			<div class="header__color">
-				<h1 class="header__title"> RODOLFO MAYORA </h1>
-				<h2 class="header__text">Desarrollador Web jr</h2>
-			</div>
+		<!-- header -->
+		<header class="header-2">
+			<a href="index.html">
+				<h1 class="header__title-2">RODOLFO <br> MAYORA</h1>
+			</a>
 		</header>
 
-
-		<!-- NAVIGATION BAR 
-		<nav id="navigation" class="navigation">
-			<a class="navigation__item" href="#">Inicio</a>
-			<a class="navigation__item" href="#">Portafolio</a>
-			<a class="navigation__item" href="#">Sobre mi</a>
-			<a class="navigation__item" href="#">Contacto</a>
-		</nav>
-		-->
-
-		<!-- CONTENT 
-				
-
-				
-
-		-->
-		<main class="main">
-
-			<h2 class="main__title">
-				Algunos proyectos
+		<!-- CONTENT -->
+		<main class="main-2">
+			
+			<h2 class="main__title-2">
+				PROYECTOS
 			</h2>
 
 			<section class="project">
@@ -71,12 +52,12 @@
 			</section>
 
 		</main>
-	
+		
 		<!-- FOOTER -->
 		<footer class="footer">
 			<nav class="footer__nav">
-				<a class="footer__nav-item footer__nav-item--open" href="index.html"> INICIO </a>
-				<a class="footer__nav-item" href="proyectos.html"> PROYECTOS </a>
+				<a class="footer__nav-item" href="index.html"> INICIO </a>
+				<a class="footer__nav-item footer__nav-item--open" href="proyectos.html"> PROYECTOS </a>
 				<a class="footer__nav-item" href="#"> SOBRE MI</a>
 				<a class="footer__nav-item" href="#"> CONTACTO </a>
 			</nav>
@@ -92,32 +73,11 @@
 			
 			<small class="footer__copy-right"> &copy; 2019 - Todos los derechos reservados </small>
 		</footer>
-		
+
 	</div>
 
-	<!-- SCRIPTS 
-	<script type="text/javascript">
-		const navigation = document.getElementById( 'navigation' );
 
-		document.addEventListener( 'scroll', function () {
-			if ( window.pageYOffset === 0 ) {
-				console.log( 'no sticky' );
-				navigation.classList.remove( 'navigation--moved' )
-				navigation.classList.add( 'navigation' );
-			} 
-
-			if ( window.pageYOffset > 0 ) {
-				if ( ! navigation.classList.contains( 'navigation--moved' ) )
-				{
-					console.log( 'sticky' );
-					navigation.classList.add( 'navigation--moved' );
-					navigation.classList.remove( 'navigation' );
-				}
-			}
-		} );
-	</script>
-	-->
-
+	<!-- SCRIPTS -->
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
