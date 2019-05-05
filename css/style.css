@@ -296,8 +296,8 @@ footer { display: block; } /* evita problemas de compatibilidad */
 
 .footer__nav-item {
 	display: block;
-	padding: 8%;
-	margin: 4%;
+	padding: 5%;
+	margin: 6%;
 	font-size: 1.4rem;
 	color: #fff;
 	text-align: center;
