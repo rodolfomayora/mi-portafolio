@@ -37,6 +37,7 @@ header,
 nav,
 main,
 section,
+section,
 footer { display: block; } /* evita problemas de compatibilidad */
 
 /*	Header
@@ -44,7 +45,8 @@ footer { display: block; } /* evita problemas de compatibilidad */
 .header {
 	position: relative;
 	z-index: 0;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 	line-height: 100%;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -78,14 +80,18 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100%;
-	background-color: rgba( 44, 62, 80, .7 );
+	height: 101%; /* con esto no se corta el color */
+	background: linear-gradient(to bottom,
+										rgba( 44, 62, 80, .1 ) 4%,
+										rgba( 44, 62, 80, 1 ) 96%);
+	 
 }
 
 /* temporal */
 .header__title,
 .header__text {
 	font-size: 1.4rem;
+	text-shadow: 1px 2px 2px #222;
 }
 
 /*	Navigation Bar
@@ -105,14 +111,14 @@ footer { display: block; } /* evita problemas de compatibilidad */
 .burger--active {
 	transform: rotate( 90deg );
 	background-color: transparent;
-	box-shadow: 0px 0px 0px 0px #111;
+	box-shadow: 0px 0px 0px -1px #111;
 }
 
 .content {
 	height: 100%;
 	width: 	100%;
 	box-shadow: inset 0px 0px 5px 5px #222;
-	transition: filter 1s;
+	transition: filter .5s;
 }
 
 .blur { 
@@ -133,8 +139,8 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	background-color: transparent;
 	visibility: hidden;
 	opacity: 0;
-	transform: scale( .5 );
-	transition: visibility 1s, opacity 1s, transform 1s;
+	transform: scale( .7 );
+	transition: visibility .7s, opacity .7s, transform .7s;
 }
 
 .navigation--visible {
@@ -211,15 +217,53 @@ footer { display: block; } /* evita problemas de compatibilidad */
 /*	Main Content
 ===========================================================*/
 .main {
-	height: 700px;
+	height: 1300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	padding: 10% 5%;
 	color: #fff;
 	background-color: rgba( 44, 62, 80, 1 );
 }
 
+.main__title {
+	line-height: 80px;
+	text-align: center;
+	border: solid 5px #eee;
+	box-shadow: 0px 0px 10px 3px #111;
+}
+
+.project {
+	flex: auto;
+	overflow: hidden;
+	background-color: #aaa; 
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 3px #111;
+	/*
+	*/
+}
+
+.project:nth-child( -n + 3 ) {
+	margin-top: 10%;
+}
+/*
+
+*/
+.project__img {
+	width: 100%;
+}
 
 /*	Footer
 ===========================================================*/
-
+.footer {
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: #2d3436;
+}
 
 /*	Media Queries
 ===========================================================*/
