@@ -150,14 +150,15 @@ footer { display: block; } /* evita problemas de compatibilidad */
 }
 
 .navigation__item {
-	padding: 12%;
+	padding-top: 12%;
+	padding-bottom: 12%;
 	width: 60%;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	text-align: center;
 	text-decoration: none;
-	text-shadow: 2px 3px 2px #111;
+	text-shadow: 1px 2px 2px #111;
 	font-weight: bold;
-	letter-spacing: 5px;
+	letter-spacing: 4px;
 	color: #fff;
 	transition: transform .6s;
 }
