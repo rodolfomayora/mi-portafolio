@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Rodolfo Mayora | CONTACTO</title>
+	<title>Contacto | Rodolfo Mayora</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
 	<meta name="description" content="Rodolfo Mayora - Desarrollar Web jr"/>
 	<meta name="keywords" content="Rodolfo, Mayora, Desarrollador, Web, Portafolio"/>
 	<link rel="icon" href="#"/>
-	<link rel="stylesheet" href="#"/> <!-- reset css -->
-	<link rel="stylesheet" href="#"/>
+	<link rel="stylesheet" href="css/normalize.css"/> <!-- reset css -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
 </head>
 <body>
-	<!-- header -->
-	<header class="header">
-		
-	</header>
+
+
 
 	<!-- NAVIGATION BAR -->
-	<nav class="navigation">
-		
+	<img id="burger" class="burger" src="img/menu.png" alt="menu"></img>
+	<nav id="navigation" class="navigation">
+		<a class="navigation__item" href="index.html">INICIO</a>
+		<a class="navigation__item" href="proyectos.html">PROYECTOS</a>
+		<a class="navigation__item" href="#">SOBRE MI</a>
+		<a class="navigation__item navigation__item--open" href="contacto.html">CONTACTO</a>
 	</nav>
 
-	<!-- CONTENT -->
-	<main class="main">
+	<div class="content">
 		
-	</main>
-	
-	<!-- FOOTER -->
-	<footer class="footer">
+		<!-- header -->
+		<header class="header-2">
+			<a href="index.html">
+				<h1 class="header__title-2">RODOLFO <br> MAYORA</h1>
+			</a>
+		</header>
+
+		<!-- CONTENT -->
+		<main class="main-2">
+			<h2 class="main__title-2">
+				CONTACTO
+			</h2>
+			<article>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</article>
+		</main>
 		
-	</footer>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<nav class="footer__nav">
+				<a class="footer__nav-item" href="index.html"> INICIO </a>
+				<a class="footer__nav-item" href="proyectos.html"> PROYECTOS </a>
+				<a class="footer__nav-item" href="#"> SOBRE MI</a>
+				<a class="footer__nav-item footer__nav-item--open" href="contacto.html"> CONTACTO </a>
+			</nav>
+			
+			<div class="footer__social-media">
+				<a class="social-media__link" href="#">
+					<img class="social-media__img" src="img/github-1.png" alt="github">
+				</a>
+				<a class="social-media__link" href="#">
+					<img class="social-media__img" src="img/linkedin-1.png" alt="linked">
+				</a>
+			</div>
+			
+			<small class="footer__copy-right"> &copy; 2019 - Derechos Reservados </small>
+		</footer>
+
+	</div>
 
 	<!-- SCRIPTS -->
-	<script src="#"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

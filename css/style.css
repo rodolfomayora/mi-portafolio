@@ -104,8 +104,10 @@ footer { display: block; } /* evita problemas de compatibilidad */
 /*	Header 2 - proyectos -contacto
 ===========================================================*/
 .header-2 {
+	position: relative;
 	padding: 8%;
 	background-color: #2d3436;
+  box-shadow: 0px 0px 10px 4px #444;
 }
 
 .header-2 > a { 	text-decoration: none; }
@@ -313,56 +315,7 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	line-height: 80px;
 	text-align: center;
 	color: #2d3436;
-
-	text-shadow: 2px 2px 8px #444, -2px -2px 8px #444
-}
-
-/*	Footer
-===========================================================*/
-.footer {
-	height: auto;
-	padding: 10%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: #fff;
-	background-color: #2d3436;
-}
-
-.footer__nav,
-.footer__social-media {
-	text-align: center;
-	margin-bottom: 8%;
-}
-
-.social-media__img {
-	width: 80px;
-	height: 80px;
-	padding: 8px;
-	margin-left: 10px;
-	margin-right: 10px;
-	background-color: transparent;
-	border-radius: 25%;
-	box-shadow: 0px 0px 10px 2px #111;
-}
-
-.footer__nav {
-	width: 70%;
-}
-
-.footer__nav-item {
-	display: block;
-	padding: 5%;
-	margin: 6%;
-	font-size: 1.4rem;
-	color: #fff;
-	text-align: center;
-	text-decoration: none;
-}
-
-.footer__nav-item--open {
-	color: #f1c40f;
-	border-bottom: solid 2px #f1c40f;
+	text-shadow: 2px 2px 8px #444, -2px -2px 8px #444;
 }
 
 /*	Media Queries rgb(25, 25, 37)
