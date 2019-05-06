@@ -40,8 +40,6 @@ section,
 section,
 footer { display: block; } /* evita problemas de compatibilidad */
 
-/*	Header
-===========================================================*/
 
 /*	Navigation Bar
 ===========================================================*/
@@ -102,7 +100,12 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	transform: scale( 1 );
 	visibility: visible;
 	opacity: 1;
-	transition: background-color .6s .4s;
+	/* esto mantiene el efecto deseado*/
+	transition: 
+		background-color .6s .4s,
+		visibility .7s, 
+		opacity .7s, 
+		transform .7s;
 	background-color: rgba( 17, 17, 17, .5 );
 }
 
@@ -179,75 +182,14 @@ footer { display: block; } /* evita problemas de compatibilidad */
 
 */
 
+/*	Header
+===========================================================*/
+
 /*	Main Content
 ===========================================================*/
-.main {
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	padding: 10% 5%;
-	color: #fff;
-	background-color: rgba( 44, 62, 80, 1 );
-}
-
-.main__title {
-	line-height: 80px;
-	font-weight: 100;
-	text-align: center;
-	border-radius: 35px/ 50%;
-	box-shadow: 0px 2px 10px 2px #111;
-}
-
-
-
-.project {
-	flex: auto;
-	height: 400px;
-	overflow: hidden;
-	background-color: #ecf0f1; 
-	border-radius: 20px;
-	box-shadow: 0px 0px 10px 3px #111;
-	/*
-	*/
-}
-
-.project:nth-child( -n + 3 ) {
-	margin-top: 10%;
-}
-/*
-
-*/
-.project__img {
-	width: 100%;
-}
-
-
-/*	Main 2 - Proyectos - Contacto - Sobre mi
-===========================================================*/
-.main-2 {
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	padding: 10% 5%;
-	color: #fff;
-	background-color: #bdc3c7;
-}
-
-.main__title-2 {
-	font-size: 2em;
-	line-height: 80px;
-	text-align: center;
-	color: #2d3436;
-	text-shadow: 2px 2px 8px #444, -2px -2px 8px #444;
-}
 
 /*	Media Queries rgb(25, 25, 37)
 ===========================================================*/
-
 
 /*	
 ===========================================================*/
