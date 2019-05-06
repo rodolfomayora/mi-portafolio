@@ -170,13 +170,18 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	visibility: hidden;
 	opacity: 0;
 	transform: scale( .7 );
-	transition: visibility .7s, opacity .7s, transform .7s;
+	transition: 
+		visibility .7s, 
+		opacity .7s, 
+		transform .7s;
 }
 
 .navigation--visible {
 	transform: scale( 1 );
 	visibility: visible;
 	opacity: 1;
+	transition: background-color .7s .7s;
+	background-color: rgba( 17, 17, 17, .5 );
 }
 
 .navigation__item {
