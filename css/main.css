@@ -17,7 +17,7 @@
 
 	padding: 10% 5%;
 	color: #fff;
-	background-color: rgba( 44, 62, 80, 1 );
+	background-color: rgba( 36, 41, 67, 1 );
 }
 
 .main__title {
@@ -33,7 +33,7 @@
 	height: 400px;
 	overflow: hidden;
 	background-color: #ecf0f1; 
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: 0px 4px 10px 1px #111;
 	/*
 	*/
@@ -67,10 +67,52 @@
 .main__title-2 {
 	font-size: 2em;
 	line-height: 80px;
-	color: #2d3436;
+	color: #242943;
 	text-shadow: 
 		2px 2px 8px #444, 
 		-2px -2px 8px #444;
+}
+
+.main__telefono,
+.main__correo {
+	padding: 10%;
+	width: 100%;
+	box-shadow: 0px 4px 10px 2px #222;
+  border-radius: 10px;
+	text-align: left;
+	background-color: #242943; 
+}
+
+.main__telefono {
+	margin-top: 20px;
+}
+
+.main__telefono-section,
+.main__correo-section {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.main__telefono-img,
+.main__correo-img {
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+	border-radius: 30px;
+	background-color: #ecf0f1;
+}
+
+.main__telefono-title,
+.main__correo-title {
+	margin-left: 10px;
+	font-size: 1.5rem;
+}
+
+.telefono,
+.correo {
+	letter-spacing: 1px;
+	text-align: center;
 }
 
 .main__profile-foto {
