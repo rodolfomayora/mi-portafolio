@@ -69,10 +69,11 @@
 	line-height: 80px;
 	color: #242943;
 	text-shadow: 
-		2px 2px 8px #444, 
-		-2px -2px 8px #444;
+		0px 2px 8px #444, 
+		0px 4px 8px #444;
 }
 
+.main__information,
 .main__telefono,
 .main__correo {
 	padding: 10%;
@@ -89,7 +90,7 @@
 
 .main__telefono-section,
 .main__correo-section {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	display: flex;
 	align-items: center;
 }
@@ -111,6 +112,7 @@
 
 .telefono,
 .correo {
+	display: block;
 	letter-spacing: 1px;
 	text-align: center;
 }
