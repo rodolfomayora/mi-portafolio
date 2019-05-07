@@ -24,8 +24,8 @@
 	line-height: 80px;
 	font-weight: 100;
 	text-align: center;
-	border-radius: 35px/ 50%;
-	box-shadow: 0px 2px 10px 2px #111;
+	border-radius: 5px;
+	box-shadow: 0px 4px 10px 1px #111;
 }
 
 .project {
@@ -33,8 +33,8 @@
 	height: 400px;
 	overflow: hidden;
 	background-color: #ecf0f1; 
-	border-radius: 20px;
-	box-shadow: 0px 0px 10px 3px #111;
+	border-radius: 5px;
+	box-shadow: 0px 4px 10px 1px #111;
 	/*
 	*/
 }
