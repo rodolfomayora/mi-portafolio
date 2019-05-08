@@ -9,85 +9,82 @@
  *  Visual - propiedades visuales
  */
 
-.main {
-	height: auto;
+.main,
+.main-2 {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-
-	padding: 10% 5%;
-	color: #fff;
-	background-color: rgba( 36, 41, 67, 1 );
+	padding: 5vmin;
 }
+
+.main { background-color: rgba(36,41,67,1); }
+
+.main-2 { background-color: #bdc3c7; }
 
 .main__title {
-	line-height: 80px;
+	line-height: 12vmax;
+	font-size: 8vmin;
 	font-weight: 100;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 10px;
+	background-color: rgba(36,41,67,1);
 	box-shadow: 0px 4px 10px 1px #111;
 }
 
-.project {
-	flex: auto;
-	height: 400px;
+.main__project {
+	align-self: center;
+	width: 90vmin;
+	height: 70vmax;
 	overflow: hidden;
 	background-color: #ecf0f1; 
+}
+
+.main__project,
+.main__information,
+.main__telefono,
+.main__correo {
+	margin-top: 6vmin;
 	border-radius: 10px;
 	box-shadow: 0px 4px 10px 1px #111;
-	/*
-	*/
-}
-
-.project:nth-child( -n + 3 ) {
-	margin-top: 10%;
-}
-/*
-
-*/
-.project__img {
-	width: 100%;
-}
-
-
-/*	Main 2 - Proyectos - Contacto - Sobre mi
-===========================================================*/
-.main-2 {
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	text-align: center;
-	padding: 10% 5%;
-	color: #fff;
-	background-color: #bdc3c7;
-}
-
-.main__title-2 {
-	font-size: 2em;
-	line-height: 80px;
-	color: #242943;
-	text-shadow: 
-		0px 2px 8px #444, 
-		0px 4px 8px #444;
 }
 
 .main__information,
 .main__telefono,
 .main__correo {
-	padding: 10%;
-	width: 100%;
-	box-shadow: 0px 4px 10px 2px #222;
-  border-radius: 10px;
-	text-align: left;
+	padding: 7vmin;
+	font-size: 16px;
 	background-color: #242943; 
 }
 
-.main__telefono {
-	margin-top: 20px;
+.main__contain-img { 
+	height: 200px;
+	overflow: hidden;
 }
 
+/* mofidificar esta clase o mejor cargar la imagen con CSS*/
+.project__img { width: 100%; }
+
+
+/*	sobre mi
+===========================================================*/
+.main__contain-foto {
+	align-self: center;
+	width: 60vmin;
+	height: 60vmin;
+	overflow: hidden;
+	margin-bottom: 6vmin;
+	border-radius: 50%;
+	border: solid 10px rgba(36,41,67,1);
+	box-shadow: 0px 2px 10px 2px #444;
+}
+
+.main__profile-foto {
+	width: 100%;
+}
+.main__information { font-size: 6vmin; }
+
+
+/*	contacto
+===========================================================*/
 .main__telefono-section,
 .main__correo-section {
 	margin-bottom: 20px;
@@ -97,37 +94,23 @@
 
 .main__telefono-img,
 .main__correo-img {
-	width: 40px;
-	height: 40px;
+	width: 15vmin;
+	height: 15vmin;
 	padding: 5px;
-	border-radius: 30px;
+	border-radius: 50%;
 	background-color: #ecf0f1;
 }
 
 .main__telefono-title,
 .main__correo-title {
 	margin-left: 10px;
-	font-size: 1.5rem;
+	font-size: 8vmin;
 }
 
 .telefono,
 .correo {
 	display: block;
+	font-size: 5vw;
 	letter-spacing: 1px;
 	text-align: center;
-}
-
-.main__profile-foto {
-	width: 190px;
-	height: 190px;
-	margin-right: auto;
-	margin-left: auto;
-	overflow: hidden;
-	border-radius: 95px;
-	border: solid 10px transparent;
-	box-shadow: 0px 2px 10px 2px #444;
-}
-
-.main__img {
-	width: 100%;
 }
