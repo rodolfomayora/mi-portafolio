@@ -7,7 +7,7 @@
 const burger = document.getElementById( 'burger' );
 const navigation = document.getElementById( 'navigation' );
 const items = document.getElementsByClassName( 'navigation__item' );
-const content = document.querySelector( '.content' );
+const content = document.querySelectorAll( '.content' );
 let burgerButton = true;
 
 
@@ -24,5 +24,7 @@ burger.addEventListener( 'click', function () {
 	burger.classList.toggle( 'burger--active' );
 
 	navigation.classList.toggle( 'navigation--visible' );
-	content.classList.toggle( 'blur' );
+	content[ 0 ].classList.toggle( 'blur' );
+	content[ 1 ].classList.toggle( 'blur' );
+	content[ 2 ].classList.toggle( 'blur' );
 } )

@@ -40,24 +40,9 @@ section,
 article,
 footer { display: block; } /* evita problemas de compatibilidad */
 
-
-/*	Navigation Bar
-===========================================================*/
-
-/*	Header
-===========================================================*/
-
 /*	Main Content
 ===========================================================*/
-.content {
-	height: 100%;
-	box-shadow: inset 0px 0px 5px 5px #222;
-	transition: filter .5s;
-}
+.content { transition: filter .5s; }
 
-
-/*	Media Queries rgb(25, 25, 37)
-===========================================================*/
-
-/*	
-===========================================================*/
+/** el color de los lados depende del background de body */
+.blur { filter: blur( 5px ); }
