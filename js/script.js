@@ -1,8 +1,6 @@
 /**
  * @fileoverview funcionalidade del sitio
  * @author Rodolfo < rodolfomayora96@gmail.com >
- * @
- * @
  */
 const burger = document.getElementById( 'burger' );
 const navigation = document.getElementById( 'navigation' );
