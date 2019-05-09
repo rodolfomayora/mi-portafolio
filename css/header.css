@@ -58,6 +58,7 @@
 
 .header__subtitle { color: #f1c40f; }
 
+
 /*	Header 2 - proyectos -contacto - Sobre mi
 ===========================================================*/
 
@@ -69,10 +70,40 @@
 
 .header__link { text-decoration: none; }
 
-.header__title-2 {
+.header__title-2,
+.header__title-3 {
 	margin: 0;
 	font-size: 9.5vmax;
 	font-weight: 600;
 	color: #ecf0f1;
 	letter-spacing: 2px;;
+}
+
+.header__title-3 { 
+	display: none; 
+	font-size: 5vmin;
+}
+
+
+/** el min-height es para que los moviles mantengan el burger menu */
+@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+
+	.header__circle {
+		width: 87vmin;
+		height: 87vmin;
+		margin-top: 8vmin;
+	}
+
+	.header__title,
+	.header__subtitle {
+		font-size: 5.5vmin;
+	}
+
+	.header-2 {
+		padding: 6vh;
+	}	
+
+	.header__title-2 { display: none; }
+
+	.header__title-3 { display: block; }
 }

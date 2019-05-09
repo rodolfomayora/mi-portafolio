@@ -16,15 +16,6 @@
 	<link rel="stylesheet" href="css/footer.css"/>
 </head>
 <body>
-
-	<!-- BURGER NAVIGATION -->
-	<img id="burger" class="burger" src="img/menu.png" alt="menu"></img>
-	<nav id="navigation" class="navigation">
-		<a class="navigation__item navigation__item--open" href="index.html">INICIO</a>
-		<a class="navigation__item" href="proyectos.html">PROYECTOS</a>
-		<a class="navigation__item" href="sobre_mi.html">SOBRE MI</a>
-		<a class="navigation__item" href="contacto.html">CONTACTO</a>
-	</nav>
 		
 	<!-- HEADER -->
 	<header class="header content">
@@ -36,15 +27,14 @@
 		</div>
 	</header>
 
-
-	<!-- NAVIGATION BAR 
+	<!-- BURGER NAVIGATION -->
+	<img id="burger" class="burger" src="img/menu.png" alt="menu"></img>
 	<nav id="navigation" class="navigation">
-		<a class="navigation__item" href="#">Inicio</a>
-		<a class="navigation__item" href="#">Portafolio</a>
-		<a class="navigation__item" href="#">Sobre mi</a>
-		<a class="navigation__item" href="#">Contacto</a>
+		<a class="navigation__item navigation__item--open" href="index.html">INICIO</a>
+		<a class="navigation__item" href="proyectos.html">PROYECTOS</a>
+		<a class="navigation__item" href="sobre_mi.html">SOBRE MI</a>
+		<a class="navigation__item" href="contacto.html">CONTACTO</a>
 	</nav>
-	-->
 
 	<!-- MAIN -->
 	<main class="main content">
@@ -96,32 +86,63 @@
 		<section class="footer__section">
 			<address> Venezuela </address>
 
-			<small> &copy; 2019 - Derechos Reservados </small>
+			<small> &copy; 2019 Rodolfo Mayora Pereda - Todos los derechos reservados </small>
 		</section>
 	</footer>
 
 	<!-- SCRIPTS 
+	-->
 	<script type="text/javascript">
-		const navigation = document.getElementById( 'navigation' );
+		// solo el index.html tendra este codigo
 
-		document.addEventListener( 'scroll', function () {
+
+		const navigation2 = document.getElementById( 'navigation' );
+
+		/**
+		 * @function
+		 * @name eventMenuNormal
+		 * @description alterna una clases css dependiendo del scroll
+		 */
+		function eventMenuNormal () {
+
 			if ( window.pageYOffset === 0 ) {
-				console.log( 'no sticky' );
-				navigation.classList.remove( 'navigation--moved' )
-				navigation.classList.add( 'navigation' );
+				//console.log( 'no sticky' );
+				navigation2.classList.toggle( 'navigation--moved' )
 			} 
 
 			if ( window.pageYOffset > 0 ) {
-				if ( ! navigation.classList.contains( 'navigation--moved' ) )
+				if ( ! navigation2.classList.contains( 'navigation--moved' ) )
 				{
-					console.log( 'sticky' );
-					navigation.classList.add( 'navigation--moved' );
-					navigation.classList.remove( 'navigation' );
+					//console.log( 'sticky' );
+					navigation2.classList.toggle( 'navigation--moved' );
 				}
 			}
-		} );
+		}
+
+
+		/**
+		 * @function
+		 * @name menuNormal
+		 * @descrition añade o quita un evento de scroll a todo el documento web
+		 * @param {Object MediaQueryList} mql
+		 */
+		function menuNormal ( mql ) {
+
+			mql.matches
+				? document.addEventListener( 'scroll', eventMenuNormal )
+				: document.removeEventListener( 'scroll', eventMenuNormal );
+		}
+
+		// mediaqueires en javascript GENIAL!!!
+		let mediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 1199px)');
+
+		menuNormal( mediaQuery );
+
+		mediaQuery.addListener( menuNormal );
+
+
+		// ahora puedo tener codigo que se ejecuta dependiando del aquipo!
 	</script>
-	-->
 
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

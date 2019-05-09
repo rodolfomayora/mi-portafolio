@@ -4,7 +4,6 @@
  */
 const burger = document.getElementById( 'burger' );
 const navigation = document.getElementById( 'navigation' );
-const items = document.getElementsByClassName( 'navigation__item' );
 const content = document.querySelectorAll( '.content' );
 let burgerButton = true;
 

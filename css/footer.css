@@ -17,6 +17,7 @@
 	background-color: #2d3436;
 }
 
+
 .footer__section:nth-child( -n + 2) { margin-bottom: 5vh; }
 
 .footer__nav {
@@ -38,6 +39,7 @@
 	border-bottom: solid 2px #f1c40f;
 }
 
+
 .social-media__link { text-decoration: none; }
 
 .social-media__link:first-child { margin-right: 20px; }
@@ -51,3 +53,27 @@
 }
 
 .social-media__img:hover { background-color: #f1c40f; }
+
+
+@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+	
+	.footer {
+		padding-top: 6vmin;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.footer__section:nth-child( -n + 2) {
+		flex: 0 1 40%;
+	}
+
+	.footer__nav-item {
+		padding: 2vh;
+		font-size: 2vmin;
+	}
+
+	.social-media__img {
+		width: 8vmin;
+		height: 8vmin;
+	}
+}

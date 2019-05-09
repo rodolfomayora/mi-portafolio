@@ -57,8 +57,7 @@ footer { display: block; } /* evita problemas de compatibilidad */
 	/** desde aqui empieza a desplegarce el menu de navegacion 
 		pero centrado y se trabaja con dos columnasde informacion */
 }
-
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
 	/** desde aqui empieza a desplegarce el menu de navegacion 
 		en las esquinas*/
 }
