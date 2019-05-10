@@ -89,7 +89,7 @@
 
 
 /* añadir un min-heign: 500px para ver si evito a los moviles pequeños */
-@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+@media (min-width: 768px) and (min-height: 500px) {
 	/** por ahora sera visibiliti hidden y no display none para
 		evitar problemas con javascript ( se puede aplicar media queries
 		a los documento javascript ) */
@@ -105,10 +105,10 @@
 		visibility: visible;
 		opacity: 1;
 		transform: scale( 1 );
-		/** trancision para el cambio de background */
-		transition: background .5s;
 	}
 	
+	.navigation { transition: background .5s; }
+
 	.navigation-2 {
 		position: sticky;
 		top: 0;
@@ -136,13 +136,13 @@
 	.navigation__item:hover { color: #f1c40f; }
 }
 
-/* para pantallas mayores de 768px */
 
-/*	Navigation Bar - pantallas grnades
-===========================================================
- esto es opcional no se si es demasiado poner tantos efectos
-.navigation--moved .navigation__item:hover {
-	color: rgba( 44, 62, 80, 1 );
-	background-color: #ecf0f1;
+@media (min-width: 1200px) {
+
+	.navigation,
+	.navigation-2 { justify-content: flex-end; }
+	
+	.navigation > .navigation__item, /** por la especificidad de nth */
+	.navigation-2 > .navigation__item { padding: 5vmin 2vmin; }
+
 }
-*/

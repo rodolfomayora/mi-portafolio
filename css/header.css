@@ -82,8 +82,24 @@
 .header__title-3 { 
 	display: none; 
 	font-size: 5vmin;
+	text-align: center;
 }
 
+@media (min-width: 768px) {
+
+	.header__title,
+	.header__subtitle {
+		font-size: 5.5vmin;
+	}
+	
+	.header-2 {
+		padding: 6vh;
+	}	
+	
+	.header__title-2 { display: none; }
+
+	.header__title-3 { display: block; }	
+}
 
 /** el min-height es para que los moviles mantengan el burger menu */
 @media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
@@ -94,16 +110,6 @@
 		margin-top: 8vmin;
 	}
 
-	.header__title,
-	.header__subtitle {
-		font-size: 5.5vmin;
-	}
-
-	.header-2 {
-		padding: 6vh;
-	}	
-
-	.header__title-2 { display: none; }
-
-	.header__title-3 { display: block; }
 }
+
+@media (min-width: 1200px) { .header__title-3 { text-align: left; } }
