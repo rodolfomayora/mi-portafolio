@@ -9,8 +9,8 @@
  *  Visual - propiedades visuales
  */
 
-.main-1,
-.main-2 {
+.main-1,  /** main-1 siempre se mantendra en direccion vertical */
+.main-2 { /** main-2 es el unico que podra cambiar de direccion */
 	display: flex;
 	flex-direction: column;
 	padding: 5vmin;
@@ -37,12 +37,17 @@
 	flex-direction: column;
 }
 
-.main__project {
+.section__project {
 	align-self: center;
-	max-width: 90vmin;
+	width: 90vmin;
 	height: 60vmax;
 	overflow: hidden;
 	background-color: #ecf0f1; 
+}
+
+.section__project,
+.section__profile,
+.section__contact {
 	margin-top: 6vmin; /*** OJOOOOOOOO */
 	border-radius: 10px;
 	box-shadow: 0px 4px 10px 1px #111;
@@ -73,10 +78,7 @@
 
 .main__profile-foto { width: 100%; }
 
-.main__information {
-	margin-top: 6vmin;
-	border-radius: 10px;
-	box-shadow: 0px 4px 10px 1px #111;
+.section__profile {
 	padding: 5vmin;
 	font-size: 6.2vmin;
 	background-color: #242943; 
@@ -84,21 +86,18 @@
 
 /*	contacto
 ===========================================================*/
-.contact__section {
+.section__contact {
 	padding: 7vmin;
-	margin-top: 6vmin;
-	border-radius: 10px;
-	box-shadow: 0px 4px 10px 1px #111;
 	background-color: #242943; 
 }
 
-.contact__type {
+.section__contact-type {
 	margin-bottom: 2.5vmax;
 	display: flex;
 	align-items: center;
 }
 
-.contact__img {
+.section__contact-img {
 	width: 15vmin;
 	height: 15vmin;
 	padding: 5px;
@@ -106,139 +105,92 @@
 	background-color: #ecf0f1;
 }
 
-.contact__title {
+.section__contact-title {
 	margin-left: 10px;
 	font-size: 8vmin;
 }
 
-.contact__info {
+.section__contact-info {
 	display: block;
 	font-size: 5vw;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
 
-	.contain__projects {
+@media (min-width: 768px) and (max-width: 1199px) {
+	/** sin el height para que se vean en moviles muy largos en landscape*/
+}
+
+@media (min-width: 768px)  {
+
+	.contain__projects { /** index.html y project.html*/
 		flex-direction: row;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		align-items: stretch;
 	}
-	
 }
 
-@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+@media (min-width: 768px) and (min-height: 500px) {
 
-	.main-2,
-	.contain__contact {
+	.main-2, /** sobre_mi.html */
+	.contain__contact { /** contacto.html*/
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
-	.main__title {
-		line-height: 8vh;
-		font-size: 3vh;
-	}
+	.main__title { line-height: 8vh; }
 
-	.main__project {
-		flex: auto;
-		width: 300px;
-		max-width: 450px;
+	.main__title,
+	.section__profile { font-size: 3vh; }
+
+
+	.section__project {
+		align-self: stretch;
+		flex: auto; /** para obligar a los elementos a estirarse*/
+		width: 320px;
+		max-width: 450px; /** lo coloque solo para los items de index.html*/
 		height: 50vh;
-		margin-left: .5%;
+		margin-left: .5%; /** para que por lo menos tengan un espacio */
 		margin-right: .5%;
 	}	
 
 	/** sobre mi */
 	.main__contain-foto {
 		align-self: flex-start;
-		width: 28vmin;
-		height: 28vmin
+		flex: 0 1 28vmin;
+		height: 28vmin;
+		margin-bottom: 0;
+		margin-right: 5%;
 	}
 
-	.contain__profile { width: 75%; }
+	.contain__profile { flex: 1; }
 
-	.main__information { font-size: 3vh; }
+	.section__profile { line-height: 5vh; }
 
 	/** Contacto */
-	.contact__section {
+	.section__contact {
 		width: 49%;
 		padding: 8vh 3%;
 	}
 
-	.contact__img {
+	.section__contact-img {
 		width: 10vmin;
 		height: 10vmin;
 	}
 
-	.contact__title { font-size: 4vh; }
-
-	.contact__info { font-size: 3vh; }
+	.section__contact-title,
+	.section__contact-info { font-size: 4vh; }
 }
-
 
 
 @media (min-width: 1200px) {
 
-	.main-1 {
-		max-width: 1200px;
+	.main-1,
+	.main-2 {
+		width: 1200px;
 		padding: 5vmin 0;
 		margin-right: auto;
 		margin-left: auto;
 	}
-
-	.contain__projects {
-		flex-direction: row;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		align-items: stretch;
-	}
-
-	.main-2,
-	.contain__contact {
-		flex-direction: row;
-		justify-content: space-around;
-	}
-
-	.main__title {
-		line-height: 8vh;
-		font-size: 3vh;
-	}
-
-	.main__project {
-		flex: auto;
-		width: 300px;
-		max-width: 450px;
-		height: 50vh;
-		margin-left: .5%;
-		margin-right: .5%;
-	}	
-
-	/** sobre mi */
-	.main__contain-foto {
-		align-self: flex-start;
-		width: 28vmin;
-		height: 28vmin
-	}
-
-	.contain__profile { width: 75%; }
-
-	.main__information { font-size: 3vh; }
-
-	/** Contacto */
-	.contact__section {
-		width: 49%;
-		padding: 8vh 3%;
-	}
-
-	.contact__img {
-		width: 10vmin;
-		height: 10vmin;
-	}
-
-	.contact__title { font-size: 4vh; }
-
-	.contact__info { font-size: 3vh; }
 }
