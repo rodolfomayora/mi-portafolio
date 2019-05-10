@@ -63,8 +63,8 @@
 ===========================================================*/
 
 .header-2 {
-	padding: 6.25vh;
-	text-align: center;
+	padding: 5vh;
+	text-align: left;
 	background-color: #242943;
 }
 
@@ -73,8 +73,8 @@
 .header__title-2,
 .header__title-3 {
 	margin: 0;
-	font-size: 9.5vmax;
-	font-weight: 600;
+	font-size: 4vmax;
+	font-weight: 100;
 	color: #ecf0f1;
 	letter-spacing: 2px;;
 }
