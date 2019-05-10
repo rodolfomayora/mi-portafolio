@@ -118,13 +118,23 @@
 	text-align: center;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
 	.contain__projects {
 		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: space-around;
+		flex-wrap: wrap;
 		align-items: stretch;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+
+	.main-2,
+	.contain__contact {
+		flex-direction: row;
+		justify-content: space-around;
 	}
 
 	.main__title {
@@ -142,31 +152,17 @@
 	}	
 
 	/** sobre mi */
-	.main-2 {
-		flex-direction: row;
-		justify-content: space-around;
-	}
-
 	.main__contain-foto {
 		align-self: flex-start;
 		width: 28vmin;
 		height: 28vmin
 	}
 
-	.contain__profile {
-		width: 75%;
-	}
+	.contain__profile { width: 75%; }
 
-	.main__information {
-		font-size: 3vh;
-	}
+	.main__information { font-size: 3vh; }
 
 	/** Contacto */
-	.contain__contact {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
 	.contact__section {
 		width: 49%;
 		padding: 8vh 3%;
