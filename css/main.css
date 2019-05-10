@@ -9,20 +9,20 @@
  *  Visual - propiedades visuales
  */
 
-.main,
+.main-1,
 .main-2 {
 	display: flex;
 	flex-direction: column;
 	padding: 5vmin;
 }
 
-.main { background-color: rgba(36,41,67,1); }
+.main-color-1 { background-color: rgba(36,41,67,1); }
 
-.main-2 { background-color: #bdc3c7; }
+.main-color-2 { background-color: #bdc3c7; }
 
 .main__title {
-	line-height: 12vmax;
-	font-size: 8vmin;
+	line-height: 11vmax;
+	font-size: 7vmin;
 	font-weight: 100;
 	text-align: center;
 	border-radius: 10px;
@@ -30,38 +30,32 @@
 	box-shadow: 0px 4px 10px 1px #111;
 }
 
-.main__project {
-	align-self: center;
-	width: 90vmin;
-	height: 110vmin;
-	overflow: hidden;
-	background-color: #ecf0f1; 
+.contain__projects,
+.contain__profile,
+.contain__contact {
+	display: flex;
+	flex-direction: column;
 }
 
-.main__project,
-.main__information,
-.main__telefono,
-.main__correo {
-	margin-top: 6vmin;
+.main__project {
+	align-self: center;
+	max-width: 90vmin;
+	height: 60vmax;
+	overflow: hidden;
+	background-color: #ecf0f1; 
+	margin-top: 6vmin; /*** OJOOOOOOOO */
 	border-radius: 10px;
 	box-shadow: 0px 4px 10px 1px #111;
 }
 
-.main__information,
-.main__telefono,
-.main__correo {
-	padding: 7vmin;
-	font-size: 16px;
-	background-color: #242943; 
-}
-
 .main__contain-img { 
-	height: 200px;
+	height: 50%;
 	overflow: hidden;
 }
 
 /* mofidificar esta clase o mejor cargar la imagen con CSS*/
 .project__img { width: 100%; }
+
 
 
 /*	sobre mi
@@ -77,23 +71,34 @@
 	box-shadow: 0px 2px 10px 2px #444;
 }
 
-.main__profile-foto {
-	width: 100%;
-}
-.main__information { font-size: 6vmin; }
+.main__profile-foto { width: 100%; }
 
+.main__information {
+	margin-top: 6vmin;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px 1px #111;
+	padding: 5vmin;
+	font-size: 6.2vmin;
+	background-color: #242943; 
+}
 
 /*	contacto
 ===========================================================*/
-.main__telefono-section,
-.main__correo-section {
-	margin-bottom: 20px;
+.contact__section {
+	padding: 7vmin;
+	margin-top: 6vmin;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px 1px #111;
+	background-color: #242943; 
+}
+
+.contact__type {
+	margin-bottom: 2.5vmax;
 	display: flex;
 	align-items: center;
 }
 
-.main__telefono-img,
-.main__correo-img {
+.contact__img {
 	width: 15vmin;
 	height: 15vmin;
 	padding: 5px;
@@ -101,16 +106,78 @@
 	background-color: #ecf0f1;
 }
 
-.main__telefono-title,
-.main__correo-title {
+.contact__title {
 	margin-left: 10px;
 	font-size: 8vmin;
 }
 
-.telefono,
-.correo {
+.contact__info {
 	display: block;
 	font-size: 5vw;
 	letter-spacing: 1px;
 	text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+
+	.contain__projects {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: stretch;
+	}
+
+	.main__title {
+		line-height: 8vh;
+		font-size: 3vh;
+	}
+
+	.main__project {
+		flex: auto;
+		width: 300px;
+		max-width: 450px;
+		height: 50vh;
+		margin-left: .5%;
+		margin-right: .5%;
+	}	
+
+	/** sobre mi */
+	.main-2 {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.main__contain-foto {
+		align-self: flex-start;
+		width: 28vmin;
+		height: 28vmin
+	}
+
+	.contain__profile {
+		width: 75%;
+	}
+
+	.main__information {
+		font-size: 3vh;
+	}
+
+	/** Contacto */
+	.contain__contact {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contact__section {
+		width: 49%;
+		padding: 8vh 3%;
+	}
+
+	.contact__img {
+		width: 10vmin;
+		height: 10vmin;
+	}
+
+	.contact__title { font-size: 4vh; }
+
+	.contact__info { font-size: 3vh; }
 }

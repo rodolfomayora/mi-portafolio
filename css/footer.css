@@ -58,13 +58,14 @@
 @media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
 	
 	.footer {
-		padding-top: 6vmin;
+		padding-top: 10vmin;
 		flex-flow: row wrap;
 		justify-content: center;
 	}
 
 	.footer__section:nth-child( -n + 2) {
 		flex: 0 1 40%;
+		margin-bottom: 10vh;
 	}
 
 	.footer__nav-item {
