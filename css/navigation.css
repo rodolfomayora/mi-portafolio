@@ -142,7 +142,16 @@
 	.navigation,
 	.navigation-2 { justify-content: flex-end; }
 	
-	.navigation > .navigation__item, /** por la especificidad de nth */
+	/** selector decendiente por la especificidad de nth */
+	.navigation > .navigation__item { 
+		padding: 4vmin 2vmin;
+		font-size: 1.8vh;
+	}
+
 	.navigation-2 > .navigation__item { padding: 5vmin 2vmin; }
 
+	/** para que se alinie a la derecha con el contenido */
+	.navigation-2 > .navigation__item:last-child { 
+		margin-right: calc((100% - 1200px)/2); 
+	}
 }

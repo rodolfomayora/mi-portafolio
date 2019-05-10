@@ -58,7 +58,7 @@
 .social-media__img:hover { background-color: #f1c40f; }
 
 
-@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+@media (min-width: 768px) and (min-height: 500px) {
 	
 	.footer {
 		padding-top: 10vmin;
@@ -66,18 +66,31 @@
 		justify-content: center;
 	}
 
-	.footer__section:nth-child( -n + 2) {
-		flex: 0 1 30%;
-		margin-bottom: 10vh;
+	.footer__section {
+		width: 40%;
 	}
 
 	.footer__nav-item {
-		padding: 2vh;
+		width: 30%;
+		padding: 3vh 0;
 		font-size: 2vmin;
+		text-align: left;
 	}
 
 	.social-media__img {
 		width: 8vmin;
 		height: 8vmin;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.footer__section {
+		width: 25%;
+	}
+
+	.footer__section:last-child {
+		width: 30%;
+		text-align: left;
 	}
 }

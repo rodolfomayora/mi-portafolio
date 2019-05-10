@@ -92,9 +92,7 @@
 		font-size: 5.5vmin;
 	}
 	
-	.header-2 {
-		padding: 6vh;
-	}	
+	.header-2 { padding: 6vh 0; }	
 	
 	.header__title-2 { display: none; }
 
@@ -109,7 +107,13 @@
 		height: 87vmin;
 		margin-top: 8vmin;
 	}
-
 }
 
-@media (min-width: 1200px) { .header__title-3 { text-align: left; } }
+@media (min-width: 1200px) { 
+
+	.header__title-3 { 
+		margin-left: calc((100% - 1200px)/2);
+		padding-left: 2vmin;
+		text-align: left; 
+	} 
+}
