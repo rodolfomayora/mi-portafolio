@@ -22,13 +22,13 @@
 		<div class="header__color">
 			<div class="header__circle">
 				<h1 class="header__title"> RODOLFO MAYORA PEREDA </h1>
-				<h2 class="header__subtitle"> Desarrollador Web Jr </h2>
+				<h2 class="header__subtitle"> Desarrollador Web Junior </h2>
 			</div>
 		</div>
 	</header>
 
 	<!-- BURGER NAVIGATION -->
-	<img id="burger" class="burger" src="img/menu.png" alt="menu"></img>
+	<div id="burger" class="burger"></div>
 	<nav id="navigation" class="navigation">
 		<a class="navigation__item navigation__item--open" href="index.html">INICIO</a>
 		<a class="navigation__item" href="proyectos.html">PROYECTOS</a>
@@ -66,7 +66,7 @@
 
 	<!-- FOOTER -->
 	<footer class="footer content">
-
+		<!-- Navigation -->
 		<section class="footer__section">
 			<nav class="footer__nav">
 				<a class="footer__nav-item  footer__nav-item--open" href="index.html"> INICIO </a>
@@ -75,17 +75,17 @@
 				<a class="footer__nav-item" href="contacto.html"> CONTACTO </a>
 			</nav>
 		</section>
-		
+		<!-- Social Media -->
 		<section class="footer__section">
 			<a class="social-media__link" href="https://github.com/rodolfomayora?tab=repositories" target="_blank">
 				<img class="social-media__img" src="img/github.png" alt="github">
 			</a>
 
-			<a class="social-media__link" href="#">
+			<a class="social-media__link" href="https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web" target="_blank">
 				<img class="social-media__img" src="img/linkedin.png" alt="linked">
 			</a>
 		</section>
-
+		<!-- copyright -->
 		<section class="footer__section">
 			<address> Venezuela </address>
 
@@ -93,60 +93,8 @@
 		</section>
 	</footer>
 
-	<!-- SCRIPTS 
-	-->
-	<script type="text/javascript">
-		// solo el index.html tendra este codigo
-
-
-		const navigation2 = document.getElementById( 'navigation' );
-
-		/**
-		 * @function
-		 * @name eventMenuNormal
-		 * @description alterna una clases css dependiendo del scroll
-		 */
-		function eventMenuNormal () {
-
-			if ( window.pageYOffset === 0 ) {
-				//console.log( 'no sticky' );
-				navigation2.classList.toggle( 'navigation--moved' )
-			} 
-
-			if ( window.pageYOffset > 0 ) {
-				if ( ! navigation2.classList.contains( 'navigation--moved' ) )
-				{
-					//console.log( 'sticky' );
-					navigation2.classList.toggle( 'navigation--moved' );
-				}
-			}
-		}
-
-
-		/**
-		 * @function
-		 * @name menuNormal
-		 * @descrition añade o quita un evento de scroll a todo el documento web
-		 * @param {Object MediaQueryList} mql
-		 */
-		function menuNormal ( mql ) {
-
-			mql.matches
-				? document.addEventListener( 'scroll', eventMenuNormal )
-				: document.removeEventListener( 'scroll', eventMenuNormal );
-		}
-
-		// mediaqueires en javascript GENIAL!!!
-		let mediaQuery = window.matchMedia('(min-width: 768px)');
-
-		menuNormal( mediaQuery );
-
-		mediaQuery.addListener( menuNormal );
-
-
-		// ahora puedo tener codigo que se ejecuta dependiando del aquipo!
-	</script>
-
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

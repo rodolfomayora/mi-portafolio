@@ -5,18 +5,8 @@
 const burger = document.getElementById( 'burger' );
 const navigation = document.getElementById( 'navigation' );
 const content = document.querySelectorAll( '.content' );
-let burgerButton = true;
-
 
 burger.addEventListener( 'click', function () {
-
-	if ( burgerButton ) {
-		burger.setAttribute( "src", "img/clear.png" )
-		burgerButton = ! burgerButton;
-	} else {
-		burger.setAttribute( "src", "img/menu.png" );
-		burgerButton = ! burgerButton;
-	}
 
 	burger.classList.toggle( 'burger--active' );
 

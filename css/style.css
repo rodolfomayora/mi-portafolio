@@ -19,13 +19,13 @@
 }
 
 html {
-	font-family: sans-serif;
-	font-size: 16px;
+	font: 16px sans-serif;
 	color: #ecf0f1;
 }
 
 body { background-color: #bdc3c7; }
 
+/** body del index*/
 body.color-index { background-color: rgba(36,41,67,1); }
 
 header,
@@ -42,24 +42,23 @@ footer { display: block; } /* evita problemas de compatibilidad */
 /** el color de los lados depende del background de body */
 .blur { filter: blur( 5px ); }
 
+@media (min-width: 768px) { body	{ background-color: #bdc3c7; } }
 
 
 
-@media (min-width: 768px) {
-	body	{ background-color: #bdc3c7; }
-}
-
-
-/** MEDIA QUERIES */
+/** MEDIA QUERIES 
 @media (min-width: 480px) and (max-width: 767px) {
-	/** no hay mucho que cambiar para estos dispositivos gracias 
+		no hay mucho que cambiar para estos dispositivos gracias 
 		a las viewport units, lo que si es obligatorio optimizar son 
-		las imagenes, iconos, videos y cualquier otro contenido grafico */
-	/** desde aqui empieza a desplegarce el menu de navegacion 
-		pero centrado y se trabaja con dos columnasde informacion */
+		las imagenes, iconos, videos y cualquier otro contenido grafico 
+		
+		desde aqui empieza a desplegarce el menu de navegacion 
+		pero centrado y se trabaja con dos columnasde informacion 
 }
+*/
 
+/* los medias queries como este son utiles para cargar ciertos
+		recursos multi media para cada dispositivo
 @media (min-width: 768px) and (max-width: 1199px){
-	/* los medias queries como este son utiles para cargar ciertos
-			recursos multi media para cada dispositivo*/
 }
+		*/

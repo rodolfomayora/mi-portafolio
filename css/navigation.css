@@ -16,12 +16,13 @@
 	z-index: 15;
 	top: 4vmin;
 	right: 4vmin;
-
 	width: 24vmin;
 	height: 24vmin;
 	padding: 20px;
-
 	background-color: rgba(51,51,51,.6);
+	background-image: url("../img/portafolio-img/menu.png");
+	background-position: 0px 0px;
+	background-size: 48vmin 24vmin;
 	border-radius: 50%;
 	box-shadow: 0px 0px 10px 4px #111;
 	transition: 
@@ -31,8 +32,9 @@
 }
 
 .burger--active {
+	background-color: rgba(0,0,0,0);
+	background-position: 24vmin 0px;
 	transform: rotate( 90deg );
-	background-color: transparent;
 	box-shadow: 0px 0px 0px -1px #111;
 }
 
@@ -41,14 +43,12 @@
 	position: fixed;
 	z-index: 10;
 	top: 0;
-
 	width: 100%;
 	height: 100vh;
 	padding: 20vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	visibility: hidden;
 	opacity: 0;
 	transform: scale( .7 );
@@ -62,14 +62,12 @@
 	transform: scale( 1 );
 	visibility: visible;
 	opacity: 1;
-	
 	transition: /** esto mantiene el efecto deseado*/
 		visibility .7s, 
 		opacity .7s, 
 		transform .7s,
 		background-color .6s .4s;
-
-	background-color: rgba(17,17,17,.5);
+	background-color: rgba(17,17,17,.7);
 }
 
 .navigation__item {
@@ -87,6 +85,16 @@
 
 .navigation__item--open { color: #f1c40f; }
 
+@media (min-width: 480px)  and (max-width: 767px) {
+	.burger {
+		background-image: url("../img/portafolio-img-480w/menu-480w.png");
+		background-position: 0px 0px;
+		background-size: 48vmin 24vmin;
+	}
+
+	.burger--active { background-position: 24vmin 0px; }
+}
+
 
 /* añadir un min-heign: 500px para ver si evito a los moviles pequeños */
 @media (min-width: 768px) and (min-height: 500px) {
@@ -99,9 +107,7 @@
 	.navigation-2 {
 		height: auto;
 		padding: 0;
-
 		flex-direction: row;
-
 		visibility: visible;
 		opacity: 1;
 		transform: scale( 1 );
@@ -144,8 +150,8 @@
 	
 	/** selector decendiente por la especificidad de nth */
 	.navigation > .navigation__item { 
-		padding: 4vmin 2vmin;
-		font-size: 1.8vh;
+		padding: 3.5vmin .8vw; /* considerar sustituir el padding por un width */
+		font-size: .9vmax;
 	}
 
 	.navigation-2 > .navigation__item { padding: 5vmin 2vmin; }

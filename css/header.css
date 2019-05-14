@@ -14,7 +14,8 @@
 ===========================================================*/
 .header {
 	height: 100vh;
-	background-image: url( "http://drive.google.com/uc?export=view&id=1K_8dlTfOCy9QzcIZEVyf6MC155nPGzbV" );
+	/* cambiar por enlaces relativos antes de pasar a produccion */
+	background-image: url("../img/portafolio-img/fondo.jpg"); 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -43,8 +44,8 @@
 	justify-content: center;
 	align-items: center;
 
-	border-radius: 50%;
 	background-color: rgba(0,0,0,0);
+	border-radius: 50%;
 	box-shadow: 0px 0px 10px 1px #111;
 }
 
@@ -63,9 +64,10 @@
 ===========================================================*/
 
 .header-2 {
+	display: flex;
 	padding: 5vh;
-	text-align: left;
 	background-color: #242943;
+	box-shadow: 0px -8px 0px 8px #111;/** mantien el efecto deseado */
 }
 
 .header__link { text-decoration: none; }
@@ -85,6 +87,14 @@
 	text-align: center;
 }
 
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+	.header {
+		background-image: url("../img/portafolio-img-480w/fondo-480w.jpg"); 
+	}
+}
+
 @media (min-width: 768px) {
 
 	.header__title,
@@ -92,15 +102,26 @@
 		font-size: 5.5vmin;
 	}
 	
-	.header-2 { padding: 6vh 0; }	
+	.header-2 { 
+		justify-content: center;
+		padding: 6vh 0; 
+	}
 	
 	.header__title-2 { display: none; }
 
-	.header__title-3 { display: block; }	
+	.header__title-3 { display: inline-block; }	
+
+	.header__title-3:hover {
+		transition: color 1s;
+		color: #f1c40f;
+	}
 }
 
 /** el min-height es para que los moviles mantengan el burger menu */
 @media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+	.header {
+		background-image: url("../img/portafolio-img-768w/fondo-768w.jpg"); 
+	}
 
 	.header__circle {
 		width: 87vmin;
@@ -110,10 +131,15 @@
 }
 
 @media (min-width: 1200px) { 
+	.header {
+		background-image: url("../img/portafolio-img-1200w/fondo-1200w.jpg"); 
+	}
 
-	.header__title-3 { 
-		margin-left: calc((100% - 1200px)/2);
-		padding-left: 2vmin;
-		text-align: left; 
-	} 
+	.header-2 { justify-content: flex-start; }
+
+	.header__title-3 { padding-left: 2vmin; }
+
+	 .header__link { 
+		display: inline-block;
+		margin-left: calc((100% - 1200px)/2); }
 }

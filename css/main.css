@@ -11,9 +11,9 @@
 
 .main-1,  /** main-1 siempre se mantendra en direccion vertical */
 .main-2 { /** main-2 es el unico que podra cambiar de direccion */
+	padding: 3vmin;
 	display: flex;
 	flex-direction: column;
-	padding: 5vmin;
 }
 
 .main-color-1 { background-color: rgba(36,41,67,1); }
@@ -39,7 +39,8 @@
 
 .section__project {
 	align-self: center;
-	width: 90vmin;
+	width: 100%;
+	max-width: 95vmin;
 	height: 60vmax;
 	overflow: hidden;
 	background-color: #ecf0f1; 
@@ -48,7 +49,7 @@
 .section__project,
 .section__profile,
 .section__contact {
-	margin-top: 6vmin; /*** OJOOOOOOOO */
+	margin-top: 6vmin;
 	border-radius: 10px;
 	box-shadow: 0px 4px 10px 1px #111;
 }
@@ -60,7 +61,6 @@
 
 /* mofidificar esta clase o mejor cargar la imagen con CSS*/
 .project__img { width: 100%; }
-
 
 
 /*	sobre mi
@@ -79,9 +79,35 @@
 .main__profile-foto { width: 100%; }
 
 .section__profile {
-	padding: 5vmin;
-	font-size: 6.2vmin;
+	display: flex;
+	flex-direction: column;
+	padding: 4vmin;
+	font-size: 5.5vmin;
 	background-color: #242943; 
+}
+
+.section__text,
+.section__list,
+.main__button { margin-bottom: 2.5vmax; }
+
+.section__list { padding-left: 20px; }
+
+.my-name { color: #f1c40f; }
+
+.main__button {
+	align-self: center;
+	padding: 6vmin;
+	width: 60%;
+	text-decoration: none;
+	text-align: center;
+	color: #ecf0f1;
+	border: solid 3px;
+	border-radius: 8px;
+}
+
+.main__button:hover {
+	color: #f1c40f;
+	border-color: #f1c40f; 
 }
 
 /*	contacto
@@ -92,9 +118,9 @@
 }
 
 .section__contact-type {
-	margin-bottom: 2.5vmax;
 	display: flex;
 	align-items: center;
+	margin-bottom: 2.5vmax;
 }
 
 .section__contact-img {
@@ -167,6 +193,8 @@
 	.contain__profile { flex: 1; }
 
 	.section__profile { line-height: 5vh; }
+
+	.main__button { padding: 2vmin 4vmin; }
 
 	/** Contacto */
 	.section__contact {
