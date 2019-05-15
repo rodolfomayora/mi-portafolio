@@ -1,5 +1,5 @@
 /**
- * Metodología CSS: BEM - Block Elemen Modifier;
+ * Convencion de nomenclatura: BEM - Block Elemen Modifier;
  *
  * Normas:
  * Las propiedades CSS se ordenaran en funcion de la formula PC-TV
@@ -20,13 +20,13 @@
 
 html {
 	font: 16px sans-serif;
-	color: #ecf0f1;
+	color: #eff;
 }
 
-body { background-color: #bdc3c7; }
+body { background-color: #bcc; }
 
 /** body del index*/
-body.color-index { background-color: rgba(36,41,67,1); }
+body.color-index { background-color: rgba(34,34,67,1); }
 
 .scroll-off { overflow-y: hidden; }
 
@@ -37,8 +37,9 @@ section,
 article,
 footer { display: block; } /* evita problemas de compatibilidad */
 
-/** el color de los lados depende del background de body */
+/** esta clase sera añadida a .navigation mediante javascript */
 .blur { filter: blur( 5px ); }
+/** el color de los lados del efecto blur depende del background de body */
 
 /** MEDIA QUERIES 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -55,4 +56,4 @@ footer { display: block; } /* evita problemas de compatibilidad */
 		recursos multi media para cada dispositivo
 @media (min-width: 768px) and (max-width: 1199px){
 }
-		*/
+*/

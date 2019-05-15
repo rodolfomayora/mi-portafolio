@@ -1,5 +1,5 @@
 /**
- * Metodología CSS: BEM - Block Elemen Modifier;
+ * Convencion de nomenclatura: BEM - Block Elemen Modifier;
  *
  * Normas:
  * Las propiedades CSS se ordenaran en funcion de la formula PC-TV
@@ -16,9 +16,9 @@
 	flex-direction: column;
 }
 
-.main-color-1 { background-color: rgba(36,41,67,1); }
+.main-color-1 { background-color: rgba(34,34,67,1); }
 
-.main-color-2 { background-color: #bdc3c7; }
+.main-color-2 { background-color: #bcc; }
 
 .main__title {
 	line-height: 11vmax;
@@ -26,8 +26,8 @@
 	font-weight: 100;
 	text-align: center;
 	border-radius: 10px;
-	background-color: rgba(36,41,67,1);
-	box-shadow: 0px 4px 10px 1px #111;
+	background-color: rgba(34,34,67,1);
+	box-shadow: 0 4px 10px 1px #111;
 }
 
 .contain__projects,
@@ -51,7 +51,7 @@
 .section__contact {
 	margin-top: 6vmin;
 	border-radius: 10px;
-	box-shadow: 0px 4px 10px 1px #111;
+	box-shadow: 0 4px 10px 1px #111;
 }
 
 .main__contain-img { 
@@ -72,8 +72,8 @@
 	overflow: hidden;
 	margin-bottom: 6vmin;
 	border-radius: 50%;
-	border: solid 10px rgba(36,41,67,1);
-	box-shadow: 0px 2px 10px 2px #444;
+	border: solid 10px rgba(34,34,67,1);
+	box-shadow: 0 2px 10px 2px #444;
 }
 
 .section__profile {
@@ -81,7 +81,7 @@
 	flex-direction: column;
 	padding: 4vmin;
 	font-size: 5.5vmin;
-	background-color: #242943; 
+	background-color: #224; 
 }
 
 .section__text,
@@ -92,7 +92,7 @@
 
 .section__list { padding-left: 6vmin; }
 
-.my-name { color: #f1c40f; }
+.my-name { color: #fc0; }
 
 .main__button {
 	align-self: center;
@@ -100,21 +100,21 @@
 	width: 60%;
 	text-decoration: none;
 	text-align: center;
-	color: #ecf0f1;
+	color: #eff;
 	border: solid 3px;
 	border-radius: 8px;
 }
 
 .main__button:hover {
-	color: #f1c40f;
-	border-color: #f1c40f; 
+	color: #fc0;
+	border-color: #fc0; 
 }
 
 /*	contacto
 ===========================================================*/
 .section__contact {
 	padding: 7vmin;
-	background-color: #242943;
+	background-color: #224;
 	text-align: center; 
 }
 
@@ -130,7 +130,7 @@
 	height: 15vmin;
 	padding: 5px;
 	border-radius: 50%;
-	background: #ecf0f1 url("../img/iconos.png") no-repeat;
+	background: #eff url("../img/iconos.png") no-repeat;
 	background-size: 60vmin 15vmin;
 }
 
@@ -147,27 +147,22 @@
 .section__contact-info {
 	font-size: 5vw;
 	letter-spacing: 1px;
-	color: #ecf0f1;
+	color: #eff;
 	cursor: pointer;
 }
 
-.section__contact-info:hover { color: #f1c40f; }
+.section__contact-info:hover { color: #fc0; }
 
-
-
-@media (min-width: 768px) and (max-width: 1199px) {
-	/** sin el height para que se vean en moviles muy largos en landscape*/
-}
-
+/** media query para todas las pantallas con un ancho superior a 768px */
 @media (min-width: 768px)  {
 
 	.contain__projects { /** index.html y project.html*/
-		flex-direction: row;
+		flex-flow: row wrap;
 		justify-content: space-around;
-		flex-wrap: wrap;
 	}
 }
 
+/** estos cambios no se aplicaran en telefonos moviless */
 @media (min-width: 768px) and (min-height: 500px) {
 
 	.main-2, /** sobre_mi.html */
@@ -180,7 +175,6 @@
 
 	.main__title,
 	.section__profile { font-size: 3vh; }
-
 
 	.section__project {
 		align-self: stretch;

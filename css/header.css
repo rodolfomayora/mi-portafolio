@@ -1,5 +1,5 @@
 /**
- * Metodología CSS: BEM - Block Elemen Modifier;
+ * Convencion de nomenclatura: BEM - Block Elemen Modifier;
  *
  * Normas:
  * Las propiedades CSS se ordenaran en funcion de la formula PC-TV
@@ -23,30 +23,26 @@
 
 .header__color {
 	height: 101%; /* evita el corte del fondo con algunos dispositivos */
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	font-weight: bold;
 	letter-spacing: 2px;
 	background: linear-gradient(to bottom,
-                              rgba(36,41,67,.15) 4%,
-                              rgba(36,41,67,1) 96%);
+                              rgba(34,34,67,.15) 4%,
+                              rgba(34,34,67,1) 96%);
 }
 
 .header__circle {
 	width: 95vmin; /* las viewpot units son asombrosas */
 	height: 95vmin;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	background-color: rgba(0,0,0,0);
 	border-radius: 50%;
-	box-shadow: 0px 0px 10px 1px #111;
+	box-shadow: 0 0 10px 1px #111;
 }
 
 .header__title,
@@ -54,20 +50,19 @@
 	font-size: 5.7vmin;
 	font-weight: 100;
 	text-shadow: 1px 1px 2px #222,
-	             -1px -1px 2px #222;
+	           	-1px -1px 2px #222;
 }
 
-.header__subtitle { color: #f1c40f; }
+.header__subtitle { color: #fc0; }
 
 
 /*	Header 2 - proyectos -contacto - Sobre mi
 ===========================================================*/
-
 .header-2 {
 	display: flex;
 	padding: 5vh;
-	background-color: #242943;
-	box-shadow: 0px -8px 0px 8px #111;/** mantien el efecto deseado */
+	background-color: #224;
+	box-shadow: 0 -8px 0 8px #111;/** mantien el efecto deseado */
 }
 
 .header__link { text-decoration: none; }
@@ -77,7 +72,7 @@
 	margin: 0;
 	font-size: 4vmax;
 	font-weight: 100;
-	color: #ecf0f1;
+	color: #eff;
 	letter-spacing: 2px;;
 }
 
@@ -90,17 +85,13 @@
 
 @media (min-width: 480px) and (max-width: 767px) {
 
-	.header {
-		background-image: url("../img/portafolio-img-480w/fondo-480w.jpg"); 
-	}
+	.header { background-image: url("../img/portafolio-img-480w/fondo-480w.jpg"); }
 }
 
 @media (min-width: 768px) {
 
 	.header__title,
-	.header__subtitle {
-		font-size: 5.5vmin;
-	}
+	.header__subtitle { font-size: 5.5vmin; }
 	
 	.header-2 { 
 		justify-content: center;
@@ -113,12 +104,13 @@
 
 	.header__title-3:hover {
 		transition: color 1s;
-		color: #f1c40f;
+		color: #fc0;
 	}
 }
 
 /** el min-height es para que los moviles mantengan el burger menu */
-@media (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+@media ( min-width: 768px ) and ( max-width: 1199px ) and ( min-height: 500px ) {
+
 	.header {
 		background-image: url("../img/portafolio-img-768w/fondo-768w.jpg"); 
 	}
@@ -131,6 +123,7 @@
 }
 
 @media (min-width: 1200px) { 
+
 	.header {
 		background-image: url("../img/portafolio-img-1200w/fondo-1200w.jpg"); 
 	}
@@ -141,5 +134,6 @@
 
 	 .header__link { 
 		display: inline-block;
+		/** para que se alinie a la izquierda con el contenido */
 		margin-left: calc((100% - 1200px)/2); }
 }
