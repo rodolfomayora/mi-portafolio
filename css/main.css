@@ -65,7 +65,7 @@
 
 /*	sobre mi
 ===========================================================*/
-.main__contain-foto {
+.main__profile-foto {
 	align-self: center;
 	width: 60vmin;
 	height: 60vmin;
@@ -75,8 +75,6 @@
 	border: solid 10px rgba(36,41,67,1);
 	box-shadow: 0px 2px 10px 2px #444;
 }
-
-.main__profile-foto { width: 100%; }
 
 .section__profile {
 	display: flex;
@@ -90,7 +88,9 @@
 .section__list,
 .main__button { margin-bottom: 2.5vmax; }
 
-.section__list { padding-left: 20px; }
+.section__profile > .section__text { text-indent: 3vmin; }
+
+.section__list { padding-left: 6vmin; }
 
 .my-name { color: #f1c40f; }
 
@@ -114,7 +114,8 @@
 ===========================================================*/
 .section__contact {
 	padding: 7vmin;
-	background-color: #242943; 
+	background-color: #242943;
+	text-align: center; 
 }
 
 .section__contact-type {
@@ -144,11 +145,14 @@
 }
 
 .section__contact-info {
-	display: block;
 	font-size: 5vw;
 	letter-spacing: 1px;
-	text-align: center;
+	color: #ecf0f1;
+	cursor: pointer;
 }
+
+.section__contact-info:hover { color: #f1c40f; }
+
 
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -189,7 +193,7 @@
 	}	
 
 	/** sobre mi */
-	.main__contain-foto {
+	.main__profile-foto {
 		align-self: flex-start;
 		flex: 0 1 28vmin;
 		height: 28vmin;
