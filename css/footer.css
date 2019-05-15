@@ -1,3 +1,4 @@
+
 /**
  * Metodología CSS: BEM - Block Elemen Modifier;
  *
@@ -44,19 +45,30 @@
 }
 
 
-.social-media__link { text-decoration: none; }
-
-.social-media__link:first-child { margin-right: 20px; }
-
-.social-media__img {
+.github,
+.linkedin { 
+	display: inline-block;
 	width: 20vmin;
 	height: 20vmin;
-	background-color: #ecf0f1;
+	background: #ecf0f1 url("../img/iconos.png") no-repeat;
+	background-size: 80vmin 20vmin;
 	border-radius: 50%;
 	cursor: pointer;
+	text-decoration: none; 
 }
 
-.social-media__img:hover { background-color: #f1c40f; }
+.github { 
+	margin-right: 20px; 
+	background-position: 0 0;
+}
+
+.linkedin {
+	background-position: -20vmin 0;
+}
+
+
+.gitgub:hover,
+.linkedin:hover { background-color: #f1c40f; }
 
 
 @media (min-width: 768px) and (min-height: 500px) {
@@ -76,9 +88,15 @@
 		text-align: left;
 	}
 
-	.social-media__img {
-		width: 8vmin;
-		height: 8vmin;
+	.github,
+	.linkedin {
+		width: 9vmin;
+		height: 9vmin;
+		background-size: 36vmin 9vmin;
+	}
+
+	.linkedin {
+		background-position: -9vmin 0;
 	}
 }
 

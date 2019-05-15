@@ -123,13 +123,20 @@
 	margin-bottom: 2.5vmax;
 }
 
-.section__contact-img {
+.section__correo-img,
+.section__telefono-img {
 	width: 15vmin;
 	height: 15vmin;
 	padding: 5px;
 	border-radius: 50%;
-	background-color: #ecf0f1;
+	background: #ecf0f1 url("../img/iconos.png") no-repeat;
+	background-size: 60vmin 15vmin;
 }
+
+.section__correo-img { background-position: -30vmin 0; }
+
+.section__telefono-img { background-position: -45vmin 0; }
+
 
 .section__contact-title {
 	margin-left: 10px;
@@ -202,10 +209,16 @@
 		padding: 8vh 3%;
 	}
 
-	.section__contact-img {
+	.section__correo-img,
+	.section__telefono-img {
 		width: 10vmin;
 		height: 10vmin;
+		background-size: 40vmin 10vmin;
 	}
+
+	.section__correo-img { background-position: -20vmin 0; }
+
+	.section__telefono-img { background-position: -30vmin 0; }
 
 	.section__contact-title,
 	.section__contact-info { font-size: 4vh; }
