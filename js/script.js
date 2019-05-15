@@ -7,7 +7,7 @@ const // referencias de elementos del sitio
 	burger = document.getElementById( 'burger' ),
 	body = document.getElementById( 'body' ),
 	navigation = document.getElementById( 'navigation' ),
-	content = document.querySelectorAll( '.content' );
+	content	= document.querySelectorAll( '.js-content' );
 
 burger.addEventListener( 'click', function () {
 
@@ -21,3 +21,9 @@ burger.addEventListener( 'click', function () {
 
 	body.classList.toggle( 'scroll-off' );
 } )
+
+/**
+ * TO DO:
+ * - añadir mediar queries para que el menu hamburguesa solo sea referenciado
+ *   cuando el sitio carge en pantallas inferiores a los 767px
+ */
