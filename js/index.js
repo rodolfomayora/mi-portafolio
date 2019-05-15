@@ -7,6 +7,9 @@
 
 const navigation2 = document.getElementById( 'navigation' );
 
+// mediaqueires en javascript GENIAL!!!
+let mediaQuery = window.matchMedia('(min-width: 768px)');
+
 /**
  * @function
  * @name eventMenuNormal
@@ -40,9 +43,6 @@ function menuNormal ( mql ) {
 		? document.addEventListener( 'scroll', eventMenuNormal )
 		: document.removeEventListener( 'scroll', eventMenuNormal );
 }
-
-// mediaqueires en javascript GENIAL!!!
-let mediaQuery = window.matchMedia('(min-width: 768px)');
 
 menuNormal( mediaQuery );
 
