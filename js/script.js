@@ -1,9 +1,4 @@
-/**
- * @fileoverview funcionalidade del sitio
- * @author Rodolfo < rodolfomayora96@gmail.com >
- */
-
-const // referencias de elementos del sitio
+var
 	burger = document.getElementById( 'burger' ),
 	body = document.getElementById( 'body' ),
 	navigation = document.getElementById( 'navigation' ),
@@ -21,9 +16,3 @@ burger.addEventListener( 'click', function () {
 
 	body.classList.toggle( 'scroll-off' );
 } )
-
-/**
- * TO DO:
- * - añadir mediar queries para que el menu hamburguesa solo sea referenciado
- *   cuando el sitio carge en pantallas inferiores a los 767px
- */
