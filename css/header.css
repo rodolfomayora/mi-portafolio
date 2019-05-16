@@ -9,13 +9,12 @@
  *  Visual - propiedades visuales
  */
 
-
 /*	Header 1 - Inicio
 ===========================================================*/
 .header {
 	height: 100vh;
 	/* cambiar por enlaces relativos antes de pasar a produccion */
-	background-image: url("../img/portafolio-img/fondo.jpg"); 
+	background-image: url("http://drive.google.com/uc?export=view&id=1ln6wo3V0ZFFCeKloTvYljEhjOPV9931i"); 
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	        background-size: cover;
@@ -124,7 +123,7 @@
 
 @media (min-width: 480px) and (max-width: 767px) {
 
-	.header { background-image: url("../img/portafolio-img-480w/fondo-480w.jpg"); }
+	.header { background-image: url("http://drive.google.com/uc?export=view&id=1cdO3SjUPT1lMJllzAWj7DPAvryuSyVSh"); }
 }
 
 @media (min-width: 768px) {
@@ -156,7 +155,7 @@
 @media ( min-width: 768px ) and ( max-width: 1199px ) and ( min-height: 500px ) {
 
 	.header {
-		background-image: url("../img/portafolio-img-768w/fondo-768w.jpg"); 
+		background-image: url("http://drive.google.com/uc?export=view&id=135ZuLszIF_-ZJRcnYlV3ClMbaMJO3EUO");   
 	}
 
 	.header__circle {
@@ -169,7 +168,7 @@
 @media (min-width: 1200px) { 
 
 	.header {
-		background-image: url("../img/portafolio-img-1200w/fondo-1200w.jpg"); 
+		background-image: url("http://drive.google.com/uc?export=view&id=1GTXow84RAvMVJx2SkSnA46-Qvg0iYGxg"); 	 
 	}
 
 	.header-2 { -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
