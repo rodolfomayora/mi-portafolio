@@ -43,6 +43,7 @@
 	max-width: 95vmin;
 	height: 60vmax;
 	overflow: hidden;
+	text-decoration: none;
 	background-color: #ecf0f1; 
 }
 
@@ -54,14 +55,30 @@
 	box-shadow: 0 4px 10px 1px #111;
 }
 
+.img-project-slider { background-image: url("../img/img-1.png"); }
+.img-project-forms { background-image: url("../img/img-2.jpg"); }
+
 .main__contain-img { 
-	height: 50%;
-	overflow: hidden;
+	height: 60%;
+	background-color: #aaa;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center
 }
 
-/* mofidificar esta clase o mejor cargar la imagen con CSS*/
-.project__img { width: 100%; }
+.project__title {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: #222243;
+	font-size: 8vmin;
+	text-align: center;
+}
 
+.project__icon {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 /*	sobre mi
 ===========================================================*/
