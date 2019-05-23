@@ -2,6 +2,7 @@
  * @fileoverview gestion del codigo inicial para index.html; se añadira un escuchador
  *  del evento escroll solo cuando el sitio se visualice en pantallas superiores a los
  *  768px de ancho
+ * 
  * @author rodolfo < rodolfomayora96@gmail.com>
  */
 
@@ -17,15 +18,15 @@ let mediaQuery = window.matchMedia('(min-width: 768px)');
  */
 function eventMenuNormal () {
 
-	if ( window.pageYOffset === 0 ) {
-		//console.log( 'no sticky' );
+	if ( window.pageYOffset === 0 ) { // no sticky menu
+		
 		navigation2.classList.toggle( 'navigation--moved' )
 	} 
 
-	if ( window.pageYOffset > 0 ) {
-		if ( ! navigation2.classList.contains( 'navigation--moved' ) )
-		{
-			//console.log( 'sticky' );
+	if ( window.pageYOffset > 0 ) { // sticky menu
+
+		if ( ! navigation2.classList.contains( 'navigation--moved' ) ) {
+			
 			navigation2.classList.toggle( 'navigation--moved' );
 		}
 	}
