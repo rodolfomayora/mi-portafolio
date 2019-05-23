@@ -55,8 +55,8 @@
 	box-shadow: 0 4px 10px 1px #111;
 }
 
-.img-project-slider { background-image: url("../img/img-1.png"); }
-.img-project-forms { background-image: url("../img/img-2.jpg"); }
+.img-project-1 { background-image: url("../img/img-project-1.png"); }
+.img-project-2 { background-image: url("../img/img-project-2.png"); }
 
 .main__contain-img { 
 	height: 60%;
