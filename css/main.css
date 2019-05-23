@@ -30,7 +30,8 @@
 	box-shadow: 0 4px 10px 1px #111;
 }
 
-.contain__projects,
+.contain__projects-1,		/** index.html */
+.contain__projects-2, /** project.html */
 .contain__profile,
 .contain__contact {
 	display: flex;
@@ -43,7 +44,9 @@
 	max-width: 95vmin;
 	height: 60vmax;
 	overflow: hidden;
+	color: #222243;
 	text-decoration: none;
+	text-align: center;
 	background-color: #ecf0f1; 
 }
 
@@ -59,25 +62,28 @@
 .img-project-2 { background-image: url("../img/img-project-2.png"); }
 
 .main__contain-img { 
-	height: 60%;
+	height: 36vmax; /* es un 60% del 60vh */
 	background-color: #aaa;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center
+	background-size: 68vmax;
+	background-position: center;
 }
 
 .project__title {
-	padding-top: 5%;
-	padding-bottom: 5%;
-	color: #222243;
+	line-height: 8vmax;
 	font-size: 8vmin;
-	text-align: center;
+}
+
+.project__text {
+	line-height: 4vmax;
+	font-size: 5.5vmin;
 }
 
 .project__icon {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+	display: inline-block;
+	height: 8vmax;
+	width: 8vmax;
+	background: url('../img/enlace-externo.png') no-repeat center/10vmax;
 }
 
 /*	sobre mi
@@ -173,16 +179,60 @@
 /** media query para todas las pantallas con un ancho superior a 768px */
 @media (min-width: 768px)  {
 
-	.contain__projects { /** index.html y project.html*/
-		flex-flow: row wrap;
-		justify-content: space-around;
+	.contain__projects-1,		/** index.html */
+	.contain__projects-2 { /** project.html */
+		flex-direction: row; 
+		flex-wrap: wrap;
 	}
+
+	.contain__projects-1 { justify-content: space-around; }
+
 }
 
 /** estos cambios no se aplicaran en telefonos moviless */
 @media (min-width: 768px) and (min-height: 500px) {
 
-	.main-2, /** sobre_mi.html */
+
+	.section__project {
+		flex: auto; /** para obligar a los elementos a estirarse*/
+		width: 320px;
+		height: 50vh;
+		margin-left: .5%; /** para que por lo menos tengan un espacio */
+		margin-right: .5%;
+	}	
+
+	.contain__projects-1 .section__project {
+		max-width: 450px; /** lo coloque solo para los items de index.html*/
+	}
+
+	.contain__projects-2 .section__project {
+		max-width: 48%; /** lo coloque solo para los items de index.html*/
+	}
+
+	.main__contain-img {
+		height: 25vh;  /** 50% de 50vh */
+		background-size: 60vh;
+	}
+
+	.project__title {
+		line-height: 6.6vh;
+		font-size: 4vmin;
+	}
+
+	.project__text {
+		line-height: 4.2vh;
+		font-size: 3.2vmin;
+		margin-left: 1vh;
+		margin-right: 1vh;
+	}
+
+	.project__icon {
+		height: 10vh;
+		width: 10vh;
+		background-size: 10vh;
+	}
+
+	.main-2, 						/** sobre_mi.html */
 	.contain__contact { /** contacto.html*/
 		flex-direction: row;
 		justify-content: space-between;
@@ -193,15 +243,6 @@
 	.main__title,
 	.section__profile { font-size: 3vh; }
 
-	.section__project {
-		align-self: stretch;
-		flex: auto; /** para obligar a los elementos a estirarse*/
-		width: 320px;
-		max-width: 450px; /** lo coloque solo para los items de index.html*/
-		height: 50vh;
-		margin-left: .5%; /** para que por lo menos tengan un espacio */
-		margin-right: .5%;
-	}	
 
 	/** sobre mi */
 	.main__profile-foto {
