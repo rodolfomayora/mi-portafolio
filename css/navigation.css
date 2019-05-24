@@ -94,7 +94,7 @@
 		background-size: 48vmin 24vmin;
 	}
 
-	.burger--active { background-position: 24vmin 0; }
+	.burger--active { background-position: -24vmin 0; }
 }
 
 
@@ -120,7 +120,7 @@
 	.navigation { transition: background .5s; }
 
 	.navigation-2 {
-		position: sticky;
+		position: relative;
 		top: 0;
 		background-color: #224;
 		box-shadow: 0 4px 6px #222;
@@ -129,7 +129,7 @@
 	.navigation > .navigation__item,
 	.navigation-2 > .navigation__item { /** por la especificidad de nth */
 		padding: 6vmin 3vmin;
-		font-size: 2vh;
+		font-size: 2vmin;
 		border-bottom: 0;
 	}
 
@@ -142,6 +142,16 @@
 	.navigation--moved {
 		background-color: #224;
 		box-shadow: 0 4px 6px #222;
+	}
+
+	.navigation--moved-2 { /** efecto sticky con CSS y JS*/
+		position: fixed;
+		top: 0;
+	}
+
+	.navigation--moved-2 + .content { /** esto me permite mantener los elementos de 
+																				abajo en su sitio*/
+		margin-top: 14vmin;
 	}
 
 	.navigation__item:hover { color: #fc0; }

@@ -194,8 +194,7 @@
 
 
 	.section__project {
-		flex: auto; /** para obligar a los elementos a estirarse*/
-		width: 320px;
+		width: 50%;  /** evita problemas con internet explorer 11*/
 		height: 50vh;
 		margin-left: .5%; /** para que por lo menos tengan un espacio */
 		margin-right: .5%;
@@ -206,6 +205,8 @@
 	}
 
 	.contain__projects-2 .section__project {
+		flex: auto; /** para obligar a los elementos a estirarse*/
+		width: 320px;
 		max-width: 48%; /** lo coloque solo para los items de index.html*/
 	}
 
@@ -248,7 +249,7 @@
 	/** sobre mi */
 	.main__profile-foto {
 		align-self: flex-start;
-		flex: 0 1 28vmin;
+		width: 28vmin;
 		height: 28vmin;
 		margin-bottom: 0;
 		margin-right: 5%;

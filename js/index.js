@@ -9,7 +9,7 @@
 const navigation2 = document.getElementById( 'navigation' );
 
 // mediaqueires en javascript GENIAL!!!
-let mediaQuery = window.matchMedia('(min-width: 768px)');
+let mediaQuery = window.matchMedia( '(min-width: 768px)' );
 
 /**
  * @function
@@ -18,17 +18,15 @@ let mediaQuery = window.matchMedia('(min-width: 768px)');
  */
 function eventMenuNormal () {
 
-	if ( window.pageYOffset === 0 ) { // no sticky menu
-		
-		navigation2.classList.toggle( 'navigation--moved' )
-	} 
-
 	if ( window.pageYOffset > 0 ) { // sticky menu
 
 		if ( ! navigation2.classList.contains( 'navigation--moved' ) ) {
 			
 			navigation2.classList.toggle( 'navigation--moved' );
 		}
+	} else { // no sticky menu
+
+		navigation2.classList.toggle( 'navigation--moved' )
 	}
 }
 
