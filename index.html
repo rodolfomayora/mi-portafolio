@@ -8,12 +8,7 @@
 	<meta name="keywords" content="Rodolfo, Mayora, Pereda, Desarrollador, Web, Portafolio"/>
 	<meta name="author" content="Rodolfo Mayora Pereda" />
 	<link rel="icon" href="img/favicon.ico"/>
-	<link rel="stylesheet" href="css/normalize.css"/> <!-- reset css -->
 	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/navigation.css"/>
-	<link rel="stylesheet" href="css/header.css"/>
-	<link rel="stylesheet" href="css/main.css"/>
-	<link rel="stylesheet" href="css/footer.css"/>
 </head>
 <body class="color-index" id="body">
 		
@@ -87,7 +82,30 @@
 	</footer>
 
 	<!-- SCRIPTS -->
+	<script type="text/javascript">
+		var navigation2 = document.getElementById('navigation'); // mediaqueires en javascript GENIAL!!!
+
+		var mediaQuery = window.matchMedia('(min-width: 768px)');
+
+		function eventMenuNormal() {
+		  if (window.pageYOffset > 0) {
+		    // sticky menu
+		    if (!navigation2.classList.contains('navigation--moved')) {
+		      navigation2.classList.toggle('navigation--moved');
+		    }
+		  } else {
+		    // no sticky menu
+		    navigation2.classList.toggle('navigation--moved');
+		  }
+		}
+
+		function menuNormal(mql) {
+		  mql.matches ? document.addEventListener('scroll', eventMenuNormal) : document.removeEventListener('scroll', eventMenuNormal);
+		}
+
+		menuNormal(mediaQuery);
+		mediaQuery.addListener(menuNormal); // ahora puedo tener codigo que se ejecuta dependiando del aquipo!
+	</script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
