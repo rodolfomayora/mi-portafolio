@@ -79,8 +79,8 @@
 	        box-shadow: 0 4px 10px 1px #111;
 }
 
-.img-project-1 { background-image: url("../img/img-project-1.png"); }
-.img-project-2 { background-image: url("../img/img-project-2.png"); }
+.img-project-1 { background-image: url("https://dl.dropboxusercontent.com/s/b02efiatiq9r0dw/img-project-1.png?dl=0"); }
+.img-project-2 { background-image: url("https://dl.dropboxusercontent.com/s/oatoewzpiajzzs5/img-project-2.png?dl=0"); }
 
 .main__contain-img { 
 	height: 36vmax; /* es un 60% del 60vh */
@@ -105,7 +105,7 @@
 	display: inline-block;
 	height: 8vmax;
 	width: 8vmax;
-	background: url('../img/iconos.png') no-repeat -41vmax center/50vmax 10vmax;
+	background: url('https://dl.dropboxusercontent.com/s/c8sqbt48hn9mhvu/iconos.png?dl=0') no-repeat -41vmax center/50vmax 10vmax;
 }
 
 /*	sobre mi
@@ -200,7 +200,7 @@
 	padding: 5px;
 	-webkit-border-radius: 50%;
 	        border-radius: 50%;
-	background: #eff url("../img/iconos.png") no-repeat;
+	background: #eff url("https://dl.dropboxusercontent.com/s/c8sqbt48hn9mhvu/iconos.png?dl=0") no-repeat;
 	-webkit-background-size: 75vmin 15vmin;
 	        background-size: 75vmin 15vmin;
 }

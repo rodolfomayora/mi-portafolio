@@ -15,7 +15,7 @@
 .header {
 	height: 100vh;
 	/* cambiar por enlaces relativos antes de pasar a produccion */
-	background-image: url("../img/portafolio-img/fondo.jpg"); 
+	background-image: url("https://dl.dropboxusercontent.com/s/76wlbpmv7ssm97p/fondo.jpg?dl=0"); 
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	        background-size: cover;
@@ -126,7 +126,7 @@
 
 @media (min-width: 480px) and (max-width: 767px) {
 
-	.header { background-image: url("../img/portafolio-img-480w/fondo-480w.jpg"); }
+	.header { background-image: url("https://dl.dropboxusercontent.com/s/rtqfe18dnhznm3w/fondo-480w.jpg?dl=0"); }
 }
 
 @media (min-width: 768px) {
@@ -160,7 +160,7 @@
 @media ( min-width: 768px ) and ( max-width: 1199px ) and ( min-height: 500px ) {
 
 	.header {
-		background-image: url("../img/portafolio-img-768w/fondo-768w.jpg"); 
+		background-image: url("https://dl.dropboxusercontent.com/s/g1vif95wgdjq8xl/fondo-768w.jpg?dl=0"); 
 	}
 
 	.header__circle {
@@ -173,7 +173,7 @@
 @media (min-width: 1200px) { 
 
 	.header {
-		background-image: url("../img/portafolio-img-1200w/fondo-1200w.jpg"); 
+		background-image: url("https://dl.dropboxusercontent.com/s/rcqla39wldyf1ho/fondo-1200w.jpg?dl=0"); 
 	}
 
 	.header-2 { 
