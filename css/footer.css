@@ -51,7 +51,7 @@
 	width: 20vmin;
 	height: 20vmin;
 	background: #eff url("../img/iconos.png") no-repeat;
-	background-size: 80vmin 20vmin;
+	background-size: 100vmin 20vmin;
 	border-radius: 50%;
 	cursor: pointer;
 	text-decoration: none; 
@@ -92,7 +92,7 @@
 	.linkedin {
 		width: 9vmin;
 		height: 9vmin;
-		background-size: 36vmin 9vmin;
+		background-size: 45vmin 9vmin;
 	}
 
 	.linkedin {

@@ -83,7 +83,7 @@
 	display: inline-block;
 	height: 8vmax;
 	width: 8vmax;
-	background: url('../img/enlace-externo.png') no-repeat center/10vmax;
+	background: url('../img/iconos.png') no-repeat -41vmax center/50vmax 10vmax;
 }
 
 /*	sobre mi
@@ -154,7 +154,7 @@
 	padding: 5px;
 	border-radius: 50%;
 	background: #eff url("../img/iconos.png") no-repeat;
-	background-size: 60vmin 15vmin;
+	background-size: 75vmin 15vmin;
 }
 
 .section__correo-img { background-position: -30vmin 0; }
@@ -229,7 +229,8 @@
 	.project__icon {
 		height: 10vh;
 		width: 10vh;
-		background-size: 10vh;
+		background-position: -40vh 0;
+		background-size: 50vh 10vh;
 	}
 
 	.main-2, 						/** sobre_mi.html */
@@ -269,7 +270,7 @@
 	.section__telefono-img {
 		width: 10vmin;
 		height: 10vmin;
-		background-size: 40vmin 10vmin;
+		background-size: 50vmin 10vmin;
 	}
 
 	.section__correo-img { background-position: -20vmin 0; }
@@ -277,7 +278,7 @@
 	.section__telefono-img { background-position: -30vmin 0; }
 
 	.section__contact-title,
-	.section__contact-info { font-size: 4vh; }
+	.section__contact-info { font-size: 2.8vmin; }
 }
 
 
