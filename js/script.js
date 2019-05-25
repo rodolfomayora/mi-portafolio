@@ -57,11 +57,9 @@ function switchMenu ( mql ) {
 
 	if ( mql.matches ) {
 
-		burger.addEventListener( 'click', eventToMovile );
 		document.removeEventListener( 'scroll', eventToDesktop );
 	} else {
 		
-		burger.removeEventListener( 'click', eventToMovile )
 		document.addEventListener( 'scroll', eventToDesktop );
 	}
 }
@@ -70,10 +68,4 @@ switchMenu( mediaQuerie2 );
 
 mediaQuerie2.addListener( switchMenu );
 
-
-
-/**
- * TO DO:
- * - añadir media queries para que el menu hamburguesa solo sea referenciado
- *   cuando el sitio carge en pantallas inferiores a los 767px
- */
+burger.addEventListener( 'click', eventToMovile );
