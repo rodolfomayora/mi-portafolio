@@ -1,0 +1,86 @@
+/*
+.home {
+  
+}
+*/
+
+.main-1{  /** main-1 siempre se mantendra en direccion vertical */
+  padding: 3vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-color-1 { background-color: $color-1; }
+
+.main__title {
+  line-height: 11vmax;
+  font-size: 7vmin;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $color-1;
+  box-shadow: 0 4px 10px 1px #111;
+}
+
+.contain__projects-1 {		/** index.html */
+  display: flex;
+  flex-direction: column;
+}
+
+.section__project {
+  align-self: center;
+  width: 100%;
+  max-width: 95vmin;
+  height: 60vmax;
+  overflow: hidden;
+  color: #222243;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ecf0f1; 
+
+  margin-top: 6vmin;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 1px #111;
+}
+
+.img-project-1 { background-image: url("../img/img-project-1.png"); }
+.img-project-2 { background-image: url("../img/img-project-2.png"); }
+
+.main__contain-img { 
+  height: 36vmax; /* es un 60% del 60vh */
+  background-color: #aaa;
+  background-repeat: no-repeat;
+  background-size: 68vmax;
+  background-position: center;
+}
+
+.project__title {
+  line-height: 8vmax;
+  font-size: 8vmin;
+}
+
+.project__text {
+  line-height: 4vmax;
+  font-size: 5.5vmin;
+}
+
+.project__icon {
+  display: inline-block;
+  height: 8vmax;
+  width: 8vmax;
+  background: url('../img/iconos.png') no-repeat -41vmax center/50vmax 10vmax;
+}
+
+@media (min-width: 768px)  {
+  .contain__projects-1	{	/** index.html */
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 500px) {
+  .contain__projects-1 .section__project {
+    max-width: 450px; /** lo coloque solo para los items de index.html*/
+  }
+}

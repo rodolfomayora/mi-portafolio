@@ -1,0 +1,109 @@
+/*
+.contact {
+
+}
+*/
+
+.main-1{  /** main-1 siempre se mantendra en direccion vertical */
+  padding: 3vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-color-2 { background-color: #bcc; }
+
+.main__title {
+  line-height: 11vmax;
+  font-size: 7vmin;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $color-1;
+  box-shadow: 0 4px 10px 1px #111;
+}
+
+.contain__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__contact {
+  margin-top: 6vmin;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 1px #111;
+}
+
+ /*	contacto
+ ===========================================================*/
+ .section__contact {
+  padding: 7vmin;
+  background-color: #224;
+  text-align: center; 
+}
+
+.section__contact-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5vmax;
+}
+
+.section__correo-img,
+.section__telefono-img {
+  width: 15vmin;
+  height: 15vmin;
+  padding: 5px;
+  border-radius: 50%;
+  background: #eff url("../img/iconos.png") no-repeat;
+  background-size: 75vmin 15vmin;
+}
+
+.section__correo-img { background-position: -30vmin 0; }
+
+.section__telefono-img { background-position: -45vmin 0; }
+
+
+.section__contact-title {
+  margin-left: 10px;
+  font-size: 8vmin;
+}
+
+.section__contact-info {
+  text-decoration: none;
+  font-size: 5vw;
+  letter-spacing: 1px;
+  color: #eff;
+  cursor: pointer;
+}
+
+.section__contact-info:hover { color: #fc0; }
+
+
+ /** estos cambios no se aplicaran en telefonos moviless */
+ @media (min-width: 768px) and (min-height: 500px) {
+
+
+  .contain__contact { /** contacto.html*/
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /** Contacto */
+  .section__contact {
+    width: 49%;
+    padding: 8vh 3%;
+  }
+
+  .section__correo-img,
+  .section__telefono-img {
+    width: 10vmin;
+    height: 10vmin;
+    background-size: 50vmin 10vmin;
+  }
+
+  .section__correo-img { background-position: -20vmin 0; }
+
+  .section__telefono-img { background-position: -30vmin 0; }
+
+  .section__contact-title,
+  .section__contact-info { font-size: 2.8vmin; }
+ }

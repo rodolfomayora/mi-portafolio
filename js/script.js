@@ -4,7 +4,7 @@
  */
 const // referencias de elementos del DOM
 	burger = document.getElementById( 'burger' ),
-	body = document.getElementById( 'body' ),
+	body = document.getElementById( 'js-body' ),
 	navigation = document.getElementById( 'navigation' ),
 	sticky = navigation.offsetTop,
 	content	= document.querySelectorAll( '.js-content' );

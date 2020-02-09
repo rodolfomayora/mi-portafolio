@@ -1,0 +1,111 @@
+// .about_me {
+  
+// }
+
+ 
+ 
+ /*	sobre mi
+ ===========================================================*/
+
+ /* cambiar los nombre de clase urgente!! */
+
+ .main-2 { /** main-2 es el unico que podra cambiar de direccion */
+  padding: 3vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-color-2 { background-color: #bcc; }
+
+.main__title {
+  line-height: 11vmax;
+  font-size: 7vmin;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $color-1;
+  box-shadow: 0 4px 10px 1px #111;
+}
+
+ .contain__profile {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .main__profile-foto {
+  align-self: center;
+  width: 60vmin;
+  height: 60vmin;
+  overflow: hidden;
+  margin-bottom: 6vmin;
+  border-radius: 50%;
+  border: solid 10px rgba(34,34,67,1);
+  box-shadow: 0 2px 10px 2px #444;
+}
+
+.section__profile {
+   margin-top: 6vmin;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px 1px #111;
+ }
+
+.section__profile {
+  display: flex;
+  flex-direction: column;
+  padding: 4vmin;
+  font-size: 5.5vmin;
+  background-color: #224; 
+}
+
+.section__text,
+.section__list,
+.main__button { margin-bottom: 2.5vmax; }
+
+.section__profile > .section__text { text-indent: 3vmin; }
+
+.section__list { padding-left: 6vmin; }
+
+.my-name { color: #fc0; }
+
+.main__button {
+  align-self: center;
+  padding: 6vmin;
+  width: 60%;
+  text-decoration: none;
+  text-align: center;
+  color: #eff;
+  border: solid 3px;
+  border-radius: 8px;
+}
+
+.main__button:hover {
+  color: #fc0;
+  border-color: #fc0; 
+}
+
+
+ /** estos cambios no se aplicaran en telefonos moviless */
+ @media (min-width: 768px) and (min-height: 500px) {
+
+   .main-2 { 			/** sobre_mi.html */
+     flex-direction: row;
+     justify-content: space-between;
+   }
+ 
+   .section__profile { font-size: 3vh; }
+
+  .main__profile-foto {
+    align-self: flex-start;
+    width: 28vmin;
+    height: 28vmin;
+    margin-bottom: 0;
+    margin-right: 5%;
+  }
+
+  .contain__profile { flex: 1; }
+
+  .section__profile { line-height: 5vh; }
+
+  .main__button { padding: 2vmin 4vmin; }
+
+ }
