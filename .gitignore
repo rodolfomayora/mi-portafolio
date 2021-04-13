@@ -1,4 +1,6 @@
+node_modules
 img/ignorar
 img/imagenes-comprimidas
 proyecto-1.html
 proyecto-2.html
+*.map

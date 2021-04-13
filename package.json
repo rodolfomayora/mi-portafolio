@@ -1,0 +1,23 @@
+{
+  "name": "mi-portafolio",
+  "version": "1.0.0",
+  "description": "Es mi Portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodolfomayora/mi-portafolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodolfomayora/mi-portafolio/issues"
+  },
+  "homepage": "https://github.com/rodolfomayora/mi-portafolio#readme",
+  "devDependencies": {
+    "sass": "^1.25.0"
+  }
+}
